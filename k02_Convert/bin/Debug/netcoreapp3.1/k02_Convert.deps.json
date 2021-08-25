@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "k02_Convert/1.0.0": {
+        "runtime": {
+          "k02_Convert.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "k02_Convert/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

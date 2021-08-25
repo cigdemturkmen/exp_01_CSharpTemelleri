@@ -1,0 +1,13 @@
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\bin\Debug\netcoreapp3.1\k02_Convert.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\bin\Debug\netcoreapp3.1\k02_Convert.deps.json
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\bin\Debug\netcoreapp3.1\k02_Convert.runtimeconfig.json
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\bin\Debug\netcoreapp3.1\k02_Convert.runtimeconfig.dev.json
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\bin\Debug\netcoreapp3.1\k02_Convert.dll
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\bin\Debug\netcoreapp3.1\k02_Convert.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\obj\Debug\netcoreapp3.1\k02_Convert.csprojAssemblyReference.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\obj\Debug\netcoreapp3.1\k02_Convert.AssemblyInfoInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\obj\Debug\netcoreapp3.1\k02_Convert.AssemblyInfo.cs
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\obj\Debug\netcoreapp3.1\k02_Convert.csproj.CoreCompileInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\obj\Debug\netcoreapp3.1\k02_Convert.dll
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\obj\Debug\netcoreapp3.1\k02_Convert.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k02_Convert\obj\Debug\netcoreapp3.1\k02_Convert.genruntimeconfig.cache

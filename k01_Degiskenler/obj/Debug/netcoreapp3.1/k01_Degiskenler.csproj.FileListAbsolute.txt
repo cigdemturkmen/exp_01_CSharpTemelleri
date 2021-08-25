@@ -1,0 +1,13 @@
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\bin\Debug\netcoreapp3.1\k01_Degiskenler.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\bin\Debug\netcoreapp3.1\k01_Degiskenler.deps.json
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\bin\Debug\netcoreapp3.1\k01_Degiskenler.runtimeconfig.json
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\bin\Debug\netcoreapp3.1\k01_Degiskenler.runtimeconfig.dev.json
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\bin\Debug\netcoreapp3.1\k01_Degiskenler.dll
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\bin\Debug\netcoreapp3.1\k01_Degiskenler.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\obj\Debug\netcoreapp3.1\k01_Degiskenler.csprojAssemblyReference.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\obj\Debug\netcoreapp3.1\k01_Degiskenler.AssemblyInfoInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\obj\Debug\netcoreapp3.1\k01_Degiskenler.AssemblyInfo.cs
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\obj\Debug\netcoreapp3.1\k01_Degiskenler.csproj.CoreCompileInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\obj\Debug\netcoreapp3.1\k01_Degiskenler.dll
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\obj\Debug\netcoreapp3.1\k01_Degiskenler.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k01_Degiskenler\obj\Debug\netcoreapp3.1\k01_Degiskenler.genruntimeconfig.cache
