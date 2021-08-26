@@ -1,0 +1,11 @@
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k04_YasamDongusu\bin\Debug\k04_YasamDongusu.exe.config
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k04_YasamDongusu\bin\Debug\k04_YasamDongusu.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k04_YasamDongusu\bin\Debug\k04_YasamDongusu.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k04_YasamDongusu\obj\Debug\k04_YasamDongusu.csprojAssemblyReference.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k04_YasamDongusu\obj\Debug\k04_YasamDongusu.Form1.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k04_YasamDongusu\obj\Debug\k04_YasamDongusu.Properties.Resources.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k04_YasamDongusu\obj\Debug\k04_YasamDongusu.YasamDongusu.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k04_YasamDongusu\obj\Debug\k04_YasamDongusu.csproj.GenerateResource.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k04_YasamDongusu\obj\Debug\k04_YasamDongusu.csproj.CoreCompileInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k04_YasamDongusu\obj\Debug\k04_YasamDongusu.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k04_YasamDongusu\obj\Debug\k04_YasamDongusu.pdb
