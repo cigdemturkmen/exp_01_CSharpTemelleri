@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "k03_Operatorler/1.0.0": {
+        "runtime": {
+          "k03_Operatorler.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "k03_Operatorler/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

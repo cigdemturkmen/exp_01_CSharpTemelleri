@@ -1,0 +1,13 @@
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\bin\Debug\netcoreapp3.1\k03_Operatorler.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\bin\Debug\netcoreapp3.1\k03_Operatorler.deps.json
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\bin\Debug\netcoreapp3.1\k03_Operatorler.runtimeconfig.json
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\bin\Debug\netcoreapp3.1\k03_Operatorler.runtimeconfig.dev.json
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\bin\Debug\netcoreapp3.1\k03_Operatorler.dll
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\bin\Debug\netcoreapp3.1\k03_Operatorler.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\obj\Debug\netcoreapp3.1\k03_Operatorler.csprojAssemblyReference.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\obj\Debug\netcoreapp3.1\k03_Operatorler.AssemblyInfoInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\obj\Debug\netcoreapp3.1\k03_Operatorler.AssemblyInfo.cs
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\obj\Debug\netcoreapp3.1\k03_Operatorler.csproj.CoreCompileInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\obj\Debug\netcoreapp3.1\k03_Operatorler.dll
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\obj\Debug\netcoreapp3.1\k03_Operatorler.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k03_Operatorler\obj\Debug\netcoreapp3.1\k03_Operatorler.genruntimeconfig.cache
