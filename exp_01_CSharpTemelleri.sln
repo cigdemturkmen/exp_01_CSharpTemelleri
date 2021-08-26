@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "k03_Operatorler", "k03_Oper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k04_YasamDongusu", "k04_YasamDongusu\k04_YasamDongusu.csproj", "{C567F18E-9DA4-4271-8E0F-8461B5CC4421}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k05_HataYonetimi", "k05_HataYonetimi\k05_HataYonetimi.csproj", "{B366B622-646D-4C06-9A93-08643C109096}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C567F18E-9DA4-4271-8E0F-8461B5CC4421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C567F18E-9DA4-4271-8E0F-8461B5CC4421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C567F18E-9DA4-4271-8E0F-8461B5CC4421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B366B622-646D-4C06-9A93-08643C109096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B366B622-646D-4C06-9A93-08643C109096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B366B622-646D-4C06-9A93-08643C109096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B366B622-646D-4C06-9A93-08643C109096}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

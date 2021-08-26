@@ -1,0 +1,10 @@
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k05_HataYonetimi\bin\Debug\k05_HataYonetimi.exe.config
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k05_HataYonetimi\bin\Debug\k05_HataYonetimi.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k05_HataYonetimi\bin\Debug\k05_HataYonetimi.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k05_HataYonetimi\obj\Debug\k05_HataYonetimi.csprojAssemblyReference.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k05_HataYonetimi\obj\Debug\k05_HataYonetimi.Form1.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k05_HataYonetimi\obj\Debug\k05_HataYonetimi.Properties.Resources.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k05_HataYonetimi\obj\Debug\k05_HataYonetimi.csproj.GenerateResource.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k05_HataYonetimi\obj\Debug\k05_HataYonetimi.csproj.CoreCompileInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k05_HataYonetimi\obj\Debug\k05_HataYonetimi.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k05_HataYonetimi\obj\Debug\k05_HataYonetimi.pdb
