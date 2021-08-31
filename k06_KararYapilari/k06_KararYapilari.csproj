@@ -64,6 +64,12 @@
     <Compile Include="NotHesaplama.Designer.cs">
       <DependentUpon>NotHesaplama.cs</DependentUpon>
     </Compile>
+    <Compile Include="NotOrtTekrari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotOrtTekrari.Designer.cs">
+      <DependentUpon>NotOrtTekrari.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NotHesaplama.resx">
       <DependentUpon>NotHesaplama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotOrtTekrari.resx">
+      <DependentUpon>NotOrtTekrari.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
