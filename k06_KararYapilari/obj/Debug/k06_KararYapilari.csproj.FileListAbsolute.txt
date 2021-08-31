@@ -1,0 +1,12 @@
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.csprojAssemblyReference.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.Form1.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.Properties.Resources.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.csproj.GenerateResource.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.csproj.CoreCompileInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\bin\Debug\k06_KararYapilari.exe.config
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\bin\Debug\k06_KararYapilari.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\bin\Debug\k06_KararYapilari.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.Form2.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.NotHesaplama.resources

@@ -34,10 +34,17 @@ namespace k05_HataYonetimi
             catch (Exception ex)
             {
                 MessageBox.Show("Hata oluştu. Bir sayı girmeyi deneyin." + ex.Message);
+                //YADA___throw new Exception("Karakter girişi yapılamaz");
+               
             }
             //finally 
             //{
             //}
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
