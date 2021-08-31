@@ -35,6 +35,9 @@ namespace k05_HataYonetimi
             {
                 MessageBox.Show("Hata oluştu. Bir sayı girmeyi deneyin." + ex.Message);
             }
+            //finally 
+            //{
+            //}
         }
     }
 }
