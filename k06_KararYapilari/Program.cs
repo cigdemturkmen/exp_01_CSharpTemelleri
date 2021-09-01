@@ -19,7 +19,10 @@ namespace k06_KararYapilari
             //Application.Run(new Form1());
             //Application.Run(new Form2());
             //Application.Run(new NotHesaplama());
-            Application.Run(new NotOrtTekrari());
+            //Application.Run(new NotOrtTekrari());
+            //Application.Run(new Form3());
+            //Application.Run(new Form4());
+            Application.Run(new Form5());
         }
     }
 }

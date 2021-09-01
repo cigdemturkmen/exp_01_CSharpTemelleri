@@ -63,7 +63,6 @@
             this.txtVize.Name = "txtVize";
             this.txtVize.Size = new System.Drawing.Size(100, 20);
             this.txtVize.TabIndex = 1;
-         
             // 
             // txtFinal
             // 
@@ -126,7 +125,7 @@
             // 
             this.lblNotOrtalamasi.AutoSize = true;
             this.lblNotOrtalamasi.ForeColor = System.Drawing.Color.Black;
-            this.lblNotOrtalamasi.Location = new System.Drawing.Point(93, 223);
+            this.lblNotOrtalamasi.Location = new System.Drawing.Point(79, 223);
             this.lblNotOrtalamasi.Name = "lblNotOrtalamasi";
             this.lblNotOrtalamasi.Size = new System.Drawing.Size(16, 13);
             this.lblNotOrtalamasi.TabIndex = 8;
@@ -136,7 +135,7 @@
             // 
             this.lblHarfNotu.AutoSize = true;
             this.lblHarfNotu.ForeColor = System.Drawing.Color.Black;
-            this.lblHarfNotu.Location = new System.Drawing.Point(93, 256);
+            this.lblHarfNotu.Location = new System.Drawing.Point(66, 256);
             this.lblHarfNotu.Name = "lblHarfNotu";
             this.lblHarfNotu.Size = new System.Drawing.Size(16, 13);
             this.lblHarfNotu.TabIndex = 9;
@@ -146,7 +145,7 @@
             // 
             this.lblDurum.AutoSize = true;
             this.lblDurum.ForeColor = System.Drawing.Color.Black;
-            this.lblDurum.Location = new System.Drawing.Point(93, 293);
+            this.lblDurum.Location = new System.Drawing.Point(66, 293);
             this.lblDurum.Name = "lblDurum";
             this.lblDurum.Size = new System.Drawing.Size(16, 13);
             this.lblDurum.TabIndex = 10;

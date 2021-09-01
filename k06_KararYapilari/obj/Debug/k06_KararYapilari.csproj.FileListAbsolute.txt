@@ -11,3 +11,6 @@ C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\ob
 C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.Form2.resources
 C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.NotHesaplama.resources
 C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.NotOrtTekrari.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.Form3.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.Form4.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k06_KararYapilari\obj\Debug\k06_KararYapilari.Form5.resources

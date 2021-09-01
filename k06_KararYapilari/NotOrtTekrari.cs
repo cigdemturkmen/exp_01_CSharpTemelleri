@@ -25,7 +25,7 @@ namespace k06_KararYapilari
         private void button1_Click(object sender, EventArgs e)
         {
 
-
+            //olası hatalar: negatif değer girebilir. 100 üstü bir değer girebilir. harf girebilir.
 
             
             try
@@ -39,34 +39,34 @@ namespace k06_KararYapilari
                 double dAvarage = (vize * 0.30 + final * 0.70);
                 string avarage = Convert.ToString(dAvarage);
 
-                if (vize < 30)
+                if (dAvarage < 30)
                 {
                     lblNotOrtalamasi.Text = avarage;
                     lblHarfNotu.Text = "FF";
                     lblDurum.Text = "Kaldı";
                 }
-                else if (vize >= 30 && vize < 50)
+                else if (dAvarage >= 30 && dAvarage < 50)
                 {
                     lblNotOrtalamasi.Text = avarage;
                     lblHarfNotu.Text = "DD";
                     lblDurum.Text = "Kaldınız";
                 }
 
-                else if (vize >= 50 && vize < 60)
+                else if (dAvarage >= 50 && dAvarage < 60)
                 {
                     lblNotOrtalamasi.Text = avarage;
                     lblHarfNotu.Text = "CC";
                     lblDurum.Text = "Geçtiniz";
                 }
 
-                else if (vize >= 60 && vize < 85)
+                else if (dAvarage >= 60 && dAvarage < 85)
                 {
                     lblNotOrtalamasi.Text = avarage;
                     lblHarfNotu.Text = "BB";
                     lblDurum.Text = "Geçtiniz";
                 }
 
-                else if (vize >= 85 && vize <= 100)
+                else if (dAvarage >= 85 && dAvarage <= 100)
                 {
                     lblNotOrtalamasi.Text = avarage;
                     lblHarfNotu.Text = "AA";
@@ -78,13 +78,13 @@ namespace k06_KararYapilari
                     MessageBox.Show("Lütfen 0 ve 100 arasında bir değer giriniz");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 MessageBox.Show("Lütfen bir sayı giriniz");
             }
         }
 
-        
+      
     }
 }
