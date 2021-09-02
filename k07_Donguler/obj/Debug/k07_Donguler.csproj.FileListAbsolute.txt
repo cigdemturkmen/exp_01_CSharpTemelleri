@@ -1,0 +1,10 @@
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k07_Donguler\bin\Debug\k07_Donguler.exe.config
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k07_Donguler\bin\Debug\k07_Donguler.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k07_Donguler\bin\Debug\k07_Donguler.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Donguler.csprojAssemblyReference.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Donguler.Form1.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Donguler.Properties.Resources.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Donguler.csproj.GenerateResource.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Donguler.csproj.CoreCompileInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Donguler.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Donguler.pdb
