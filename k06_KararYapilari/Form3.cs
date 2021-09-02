@@ -18,15 +18,14 @@ namespace k06_KararYapilari
         }
 
 
-        //kullanıcıdan alınan ürün bilgisine göre yönlendirilecek reyonu gösteren ir uygulama yapınız.
+        //kullanıcıdan alınan ürün bilgisine göre yönlendirilecek reyonu gösteren bir uygulama yapınız.
+
         private void btnAra_Click(object sender, EventArgs e)
         {
-            var girilenUrun = txtUrunAdi.Text;
-            string urun = girilenUrun.ToLower();
+            //WOW! ToLower ve ToString metodlarını art arda kullanabiliyoruz.
+            var urun = txtUrunAdi.Text.ToString().ToLower();
 
-
-
-            if (urun=="bilgisayar" || urun == "cep telefonu" || urun == "minibook" )
+            if (urun == "bilgisayar" || urun == "cep telefonu" || urun == "minibook")
             {
                 lblYonlendirme.Text = "Teknoloji reyonuna ilerleyiniz";
             }
@@ -46,7 +45,7 @@ namespace k06_KararYapilari
                 lblYonlendirme.Text = "Bu ürün bulunmamaktadır";
             }
         }
-         
+
 
     }
 }

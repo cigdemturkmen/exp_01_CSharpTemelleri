@@ -23,69 +23,58 @@ namespace k06_KararYapilari
         }
 
 
-        //kitap sipariş sayısı girilsin. 20den küçükse birin fiyat üzerinden satış yapılsın.20-50 %5 indirim. 50-100 %10. 100-200 %20. 200den fazla ise %25 indirim yaparak kullanıcıya ödemesi gereken tutarı gösteriniz.
-        private void btnFiyatHesapla_Click(object sender, EventArgs e)
+        /*Kullanıcının aldığı kitap sayısına göre toplam fiyatı gerekli inidirimleri yaparak hesapla ve kullanıcıya göster.
+         * Her kitabın fiyatı 10.
+         * 20'den az kitap alıyorsa birim fiyat üzerinden işlem yap.
+         * 20 ile 50 arasında kitap alıyorsa %5 indirim,
+         * 50 ile 100 arasında kitap alıyorsa %10 indirim,
+         * 100 ile 200 arasında kitap alıyorsa %20 indirim,
+         * 200'den fazla kitap alıyorsa %25 indirim uygula.
+         */
+
+        private void btnCalculate_Click(object sender, EventArgs e)
         {
-            //var girilenKitapSayisi = txtKitapAdedi.Text;
-            //int KitapAdedi = Convert.ToInt32(girilenKitapSayisi);
-            //int kitapFiyati = 10;
-            //double indirimOranı = 0;
-           
-
-            
-
-
-            //if (KitapAdedi < 20 && KitapAdedi > 0)
-            //{
-            //    txtFiyat.Text = toplamTutar;
-            //}
-
-            //else if (KitapAdedi < 50 && KitapAdedi >=20)
-            //{
-
-            //}
-            //else if (KitapAdedi < 100 && KitapAdedi >= 50)
-            //{
-
-            //}
-            //else if (KitapAdedi < 200 && KitapAdedi >= 100)
-            //{
-
-            //}
-            //else if (KitapAdedi >= 200)
-            //{
-
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Lütfen geçerli bir adet giriniz");
-            //}
-
-            //double toplamTutar = (KitapAdedi * kitapFiyati * indirimOranı);
-
-
-            var girilenKitap = txtKitapAdedi.Text;
-            var kitapSayisi = Convert.ToInt32(girilenKitap);
-            double birimfiYAT = 10;
-            double tutar = 0;
-            double indirimOrani = 0;
-
-            if (true)
+            try
             {
-                indirimOranı = 0;
-            }
+                var inputNumber = txtInput.Text;
+                int numberOfBooks = Convert.ToInt32(inputNumber);
+                var bookPrice = 10;
+                double discount = 0;
 
-            else if (true)
-            {
-                indirimOranı = 0.05;
+
+                if (numberOfBooks > 0 && numberOfBooks < 20)
+                {
+                    discount = 0;
+                }
+                else if (numberOfBooks >= 20 && numberOfBooks < 50)
+                {
+                    discount = 0.05;
+                }
+                else if (numberOfBooks >= 50 && numberOfBooks < 100)
+                {
+                    discount = 0.10;
+                }
+                else if (numberOfBooks >= 100 && numberOfBooks < 200)
+                {
+                    discount = 0.20;
+                }
+                else if (numberOfBooks >= 200)
+                {
+                    discount = 0.25;
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen geçerli bir sayı giriniz.");
+                }
+                txtPrice.Text = (numberOfBooks * bookPrice * (1 - discount)).ToString();
             }
-            else if (true)
+            catch (Exception)
             {
-                
+
+                MessageBox.Show("Lütfen makul bir sayı giriniz");
             }
-            tutar = birimfiYAT * kitapSayisi * (1 - indirimOranı);
-            txtFiyat.Text = tutar.ToString();
         }
-     
+
+
     }
 }
