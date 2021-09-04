@@ -115,12 +115,11 @@ namespace k07_Donguler
                 cmbYears.Items.Add(i); //boxing
             }
         }
-
         private void cmbYears_SelectedIndexChanged(object sender, EventArgs e)
         {
             //comboboxtan veri seçimi yapmak için.
-            if (cmbYears.SelectedIndex != 100) //selected index değeri herhangi bir seçim olmazsa otomatik olarak -1 değerini alır. veya cmbYears.SelectedIndex != null --NULL CHECK
-                //null değerini convert edemezsiniz.
+            if (cmbYears.SelectedIndex != -1) //selected index değeri herhangi bir seçim olmazsa otomatik olarak -1 değerini alır. veya cmbYears.SelectedIndex != null --NULL CHECK
+                                              //null değerini convert edemezsiniz.
             {
                 var secilenYil = cmbYears.SelectedItem;
                 txtSecilenYil.Text = secilenYil.ToString();
@@ -132,7 +131,7 @@ namespace k07_Donguler
 
         private void btnRastgele_Click(object sender, EventArgs e)
         {
-            //rastgele sayılar üretip, 10 tanesini listboxta göster. aynı sayılar gelmesin.
+            //rastgele sayılar üretip, listboxta göster. aynı sayılar gelmesin!
 
             Random rnd = new Random();
 
@@ -141,12 +140,63 @@ namespace k07_Donguler
                 int rastgeleSayi = rnd.Next(1, 11);
                 if (lstSonuc.Items.Contains(rastgeleSayi) == false)
                 {
-
+                    lstSonuc.Items.Add(rastgeleSayi);
                 }
-                lstSonuc.Items.Add(rastgeleSayi);
             }
 
-           
+
+        }
+
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            //listbox'taki bilgileri temizle.
+            lstSonuc.Items.Clear();
+        }
+
+        private void BtnRandom10Numbers_Click(object sender, EventArgs e)
+        {
+            //1'den 10'a kadar sayıları rastgele sırayla listbox'a yazdır.
+
+            Random random = new Random();
+
+            while (lstSonuc.Items.Count < 10)
+            {
+                int randomNumber = random.Next(1, 11);
+                if (lstSonuc.Items.Contains(randomNumber) == false)
+                {
+                    lstSonuc.Items.Add(randomNumber);
+                }
+            }
+        }
+
+        private void BtnMultiplicationTable_Click(object sender, EventArgs e)
+        {
+            //1-10 arasındaki sayılar için çarğım tablosu oluştur.
+
+            for (int i = 1; i < 11; i++)
+            {
+                lstSonuc.Items.Add($"{i}'LER TABLOSU");
+                for (int j = 1; j < 11; j++)
+                {
+                    lstSonuc.Items.Add($"{i} x {j} = {i * j}");
+                }
+            }
+        }
+
+        private void BtnSquare_Click(object sender, EventArgs e)
+        {
+            //X'lerden 10'a 10 kare oluştur. label nesnesinde göster.
+
+            for (int i = 0; i < 8; i++)
+            {
+                LblSquare.Text = LblSquare.Text + "\n";
+                for (int j = 0; j < 10; j++)
+                {
+                    LblSquare.Text = $"{LblSquare.Text} X";
+                }
+                
+
+            }
         }
     }
 }
