@@ -194,9 +194,51 @@ namespace k07_Donguler
                 {
                     LblSquare.Text = $"{LblSquare.Text} X";
                 }
-                
-
             }
+        }
+
+        //CONTINUE, BREAK, RETURN
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+            //1-30 arasındaki sayıları yazdır, 8'in katlarını atla.
+            for (int i = 1; i < 31; i++)
+            {
+                if (i % 8 == 0)
+                {
+                    continue;
+                }
+                lstSonuc.Items.Add(i);
+            }
+        }
+
+        private void btnBreak_Click(object sender, EventArgs e)
+        {
+            //1-30 arasındaki sayıları yazdır, 9'un katı olan ilk sayıda duralım.
+            for (int i = 1; i < 31; i++)
+            {
+                if (i % 9 == 0)
+                {
+                    break;
+                }
+                lstSonuc.Items.Add(i);
+            }
+
+            MessageBox.Show("Döngü sonlandı!");
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            for (int i = 1; i < 31; i++)
+            {
+                if (i % 4 == 0)
+                {
+                    return;
+                }
+                lstSonuc.Items.Add(i);
+            }
+            MessageBox.Show("Döngü sonlandı. Bu mesaj kutusu açılmaycak.");
         }
     }
 }
+

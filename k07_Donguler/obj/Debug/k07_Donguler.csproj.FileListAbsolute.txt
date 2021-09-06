@@ -18,3 +18,5 @@ C:\Users\Hp\Source\Repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Dongu
 C:\Users\Hp\Source\Repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Donguler.exe
 C:\Users\Hp\Source\Repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Donguler.pdb
 C:\Users\Hp\Source\Repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Donguler.csproj.AssemblyReference.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Donguler.btnRastgele.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k07_Donguler\obj\Debug\k07_Donguler.ForeachDongusu.resources

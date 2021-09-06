@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k06_KararYapilari", "k06_Ka
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k07_Donguler", "k07_Donguler\k07_Donguler.csproj", "{2F3186C3-CB54-4245-91E2-7B92D8108D4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k08_Diziler", "k08_Diziler\k08_Diziler.csproj", "{A2D4EE3A-3A1C-49A0-B688-80AD51DE32FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{2F3186C3-CB54-4245-91E2-7B92D8108D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F3186C3-CB54-4245-91E2-7B92D8108D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F3186C3-CB54-4245-91E2-7B92D8108D4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2D4EE3A-3A1C-49A0-B688-80AD51DE32FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D4EE3A-3A1C-49A0-B688-80AD51DE32FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D4EE3A-3A1C-49A0-B688-80AD51DE32FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D4EE3A-3A1C-49A0-B688-80AD51DE32FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
