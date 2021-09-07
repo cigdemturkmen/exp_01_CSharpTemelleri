@@ -74,7 +74,83 @@ namespace k08_Diziler
             }
         }
 
-        //20 elemanlı boş bir dizi oluştur.sonrasında 1'den 20ye sayıları diziye ekle. sonra dizi elemanlarının hepsini lstSonuc listesinde göster
-        //bool için default değer false. int, byte, short,long 0. float,docuble, decimal 0.0. string null.
+
+        //***20 elemanlı boş bir dizi oluştur.sonrasında 1'den 20ye sayıları diziye ekle. sonra dizi elemanlarının hepsini lstSonuc listesinde göster
+        //***bool için default değer false. int, byte, short,long 0. float,docuble, decimal 0.0. string null.
+
+        private void btnDizeninSonElemani_Click(object sender, EventArgs e)
+        {
+            //iller dizisini tanımla, 5 il ekle, son elemanı seçip messageboxta göster.
+
+            string[] iller = { "Ankara", "İzmir", "Diyarbakır", "Adana", "İstanbul" };
+
+            MessageBox.Show(iller[iller.Length - 1]);
+        }
+
+        string[] isimler = { "Leyla", "Yasemin", "Bahar", "Ömer", "Serdar", "Orkun", "Eray", "Batuhan", "Çiğdem", "Mustafa", "Mert" };
+
+        private void btnRastgeleEleman_Click(object sender, EventArgs e)
+        {
+            /*global olarak isimler dizisi oluştur sonra butona her basıldığında rastgele bir index seçsin ve bu indexteki isim listbox'a eklensin. bir eklenen isim bir daha eklenmesin ve tüm isimler bitince mb'da uyarı versin*/
+
+            Random rnd = new Random();
+
+            if (lstSonuc.Items.Contains(lstSonuc.Items) == false)
+            {
+                lstSonuc.Items.Add(isimler[rnd.Next(0, isimler.Length)]);
+            }
+
+            // MessageBox.Show("Ekleyecek eleman kalmadı!");
+        }
+
+        Random rnd = new Random();
+
+        private void btnTopla_Click(object sender, EventArgs e)
+        {
+            /*sayılar dizisi oluşturalım en az 7 tane sayı eklensin(rastgele sayılar oluşturulsun). sonra butona basıldığında dizideki elemanları listeye ekle ve eklenenlerin toplamı formun başlığında gösterilsin.*/
+            var sayilar1 = new int[7];
+            int rastgele = rnd.Next(1, 11);
+
+            sayilar1[0] = rastgele;
+            sayilar1[1] = rastgele;
+            sayilar1[2] = rastgele;
+            sayilar1[3] = rastgele;
+            sayilar1[4] = rastgele;
+            sayilar1[5] = rastgele;
+            sayilar1[6] = rastgele;
+
+            foreach (var item in sayilar1)
+            {
+                //lstSonuc.Items.AddRange(item);
+            }
+            //instance: nesneden kopya almak demektir. 
+            //this içinde bulunduğunuz sınıfı temsil eder. yani burada form2'yi temsil eder.
+            //this.Text = toplam
+        }
+
+        private void btnSesliSessiz_Click(object sender, EventArgs e)
+        {
+            /*textboxta yazılan metni alıp sesli ve sessiz harflerini labellarda gösterelim.
+            8 tane sesli harfi tanımladıktan sonra metnin her bir harfini tek tek inceleriz. eğer gelen harf sesliHarfler dizisinde yer alıyorsa sesli almıyorsa sessiz label'ına eklenir.*/
+            //string: karakterler dizisidir.
+
+            char[] sesliHarfler = { 'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'i' };
+            var girilen = txtSesliSessiz.Text;
+
+            foreach (var harf in girilen)
+            {
+                if (sesliHarfler.Contains(harf))
+                {
+                    lblSesli.Text += harf.ToString();
+                }
+
+                else
+                {
+                    lblSessiz.Text += harf.ToString();
+                }
+            }
+
+            
+        }
     }
 }
