@@ -24,26 +24,20 @@ namespace k08_Diziler
 
         private void btnOrnek1_Click(object sender, EventArgs e)
         {
-            //dizi tanımlayıp dizinin elemanları hem tek tek hem de tek seferde listeye ekleyelim
+            //Dizi tanımlayıp dizinin elemanlarını hem tek tek hem de tek seferde listeye ekleyelim
+            /*****AddRange kullanımı*****/
+
+            //an easy rule: array.Length = son index + 1
 
             string[] iller = { "Ankara", "Eskişehir", "Adana", "Erzincan", "Nevşehir", "Trabzon", "Niğde" };
 
-            //tek tek ekleme
-            lstSonuc.Items.Add(iller[0]);
-            lstSonuc.Items.Add(iller[1]);
-            lstSonuc.Items.Add(iller[2]);
-            lstSonuc.Items.Add(iller[3]);
-            lstSonuc.Items.Add(iller[4]);
-            lstSonuc.Items.Add(iller[5]);
-            lstSonuc.Items.Add(iller[6]);
-
-            //genelde indexe ihtiyaç olduğu zaman for kullanılır.tek tek ekleme1;
+            //TEK TEK EKLEME1(genelde indexe ihtiyaç olduğu zaman for kullanılır):
             for (int i = 0; i < iller.Length; i++)
             {
                 lstSonuc.Items.Add(iller[i]);
             }
 
-            //tek tek ekleme2;
+            //TEK TEK EKLEME2:
             foreach (var item in iller)
             {
                 lstSonuc.Items.Add(item);
@@ -51,7 +45,6 @@ namespace k08_Diziler
 
             //tek seferde tüm diziyi bir anda eklemek için;
             lstSonuc.Items.AddRange(iller);
-
 
         }
 
@@ -74,9 +67,32 @@ namespace k08_Diziler
             }
         }
 
+        private void btn20ekle_Click(object sender, EventArgs e)
+        {
+            //***20 elemanlı boş bir dizi oluştur.sonrasında 1'den 20ye sayıları diziye ekle. sonra dizi elemanlarının hepsini lstSonuc listesinde göster
 
-        //***20 elemanlı boş bir dizi oluştur.sonrasında 1'den 20ye sayıları diziye ekle. sonra dizi elemanlarının hepsini lstSonuc listesinde göster
-        //***bool için default değer false. int, byte, short,long 0. float,docuble, decimal 0.0. string null.
+            int[] sayilar = new int[20]; //sayilar[0] = x
+
+            for (int i = 0; i < 20; i++)
+            {
+                sayilar[i] = i + 1;
+            }
+
+            //lstSonuc.Items.AddRange(sayilar); // bu kod çalışmadı.
+
+            foreach (var sayi in sayilar)
+            {
+                lstSonuc.Items.Add(sayi);
+            }
+        }
+
+
+
+
+        /*******************************************bool için default değer false. int, byte, short,long için default değer = 0. float,docuble, decimal için default değer = 0.0. string için default değer = null. *******************************************/
+
+
+
 
         private void btnDizeninSonElemani_Click(object sender, EventArgs e)
         {
@@ -87,11 +103,12 @@ namespace k08_Diziler
             MessageBox.Show(iller[iller.Length - 1]);
         }
 
+
         string[] isimler = { "Leyla", "Yasemin", "Bahar", "Ömer", "Serdar", "Orkun", "Eray", "Batuhan", "Çiğdem", "Mustafa", "Mert" };
 
         private void btnRastgeleEleman_Click(object sender, EventArgs e)
         {
-            /*global olarak isimler dizisi oluştur sonra butona her basıldığında rastgele bir index seçsin ve bu indexteki isim listbox'a eklensin. bir eklenen isim bir daha eklenmesin ve tüm isimler bitince mb'da uyarı versin*/
+            /*global olarak isimler dizisi oluştur(class'ın içinde; clickeventlerin içinde değil). sonra butona her basıldığında rastgele bir index seçsin ve bu indexteki isim listbox'a eklensin. bir eklenen isim bir daha eklenmesin ve tüm isimler bitince mb'da uyarı versin*/
 
             Random rnd = new Random();
 
@@ -152,5 +169,7 @@ namespace k08_Diziler
 
             
         }
+
+       
     }
 }

@@ -16,7 +16,9 @@ namespace k08_Diziler
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form3());
+            //Application.Run(new DersTekrarı());
+            Application.Run(new RandomPasswordGenerator());
+
         }
     }
 }
