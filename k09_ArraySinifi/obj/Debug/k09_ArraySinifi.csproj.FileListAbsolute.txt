@@ -9,3 +9,4 @@ C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\
 C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\Debug\k09_ArraySinifi.exe
 C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\Debug\k09_ArraySinifi.pdb
 C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\Debug\k09_ArraySinifi.Form2.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\Debug\k09_ArraySinifi.PasswordGeneratorArray.resources

@@ -1,0 +1,10 @@
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\EkranKoruyucu\bin\Debug\EkranKoruyucu.exe.config
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\EkranKoruyucu\bin\Debug\EkranKoruyucu.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\EkranKoruyucu\bin\Debug\EkranKoruyucu.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\EkranKoruyucu\obj\Debug\EkranKoruyucu.csprojAssemblyReference.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\EkranKoruyucu\obj\Debug\EkranKoruyucu.Form1.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\EkranKoruyucu\obj\Debug\EkranKoruyucu.Properties.Resources.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\EkranKoruyucu\obj\Debug\EkranKoruyucu.csproj.GenerateResource.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\EkranKoruyucu\obj\Debug\EkranKoruyucu.csproj.CoreCompileInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\EkranKoruyucu\obj\Debug\EkranKoruyucu.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\EkranKoruyucu\obj\Debug\EkranKoruyucu.pdb
