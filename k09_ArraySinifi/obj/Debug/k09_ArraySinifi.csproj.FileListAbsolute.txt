@@ -1,0 +1,11 @@
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\bin\Debug\k09_ArraySinifi.exe.config
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\bin\Debug\k09_ArraySinifi.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\bin\Debug\k09_ArraySinifi.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\Debug\k09_ArraySinifi.csprojAssemblyReference.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\Debug\k09_ArraySinifi.Form1.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\Debug\k09_ArraySinifi.Properties.Resources.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\Debug\k09_ArraySinifi.csproj.GenerateResource.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\Debug\k09_ArraySinifi.csproj.CoreCompileInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\Debug\k09_ArraySinifi.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\Debug\k09_ArraySinifi.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k09_ArraySinifi\obj\Debug\k09_ArraySinifi.Form2.resources
