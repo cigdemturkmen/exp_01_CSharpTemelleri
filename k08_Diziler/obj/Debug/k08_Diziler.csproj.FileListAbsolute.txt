@@ -23,3 +23,6 @@ C:\Users\Hp\source\repos\exp_01_CSharpTemelleri\k08_Diziler\bin\Debug\k08_Dizile
 C:\Users\Hp\source\repos\exp_01_CSharpTemelleri\k08_Diziler\bin\Debug\k08_Diziler.pdb
 C:\Users\Hp\source\repos\exp_01_CSharpTemelleri\k08_Diziler\obj\Debug\k08_Diziler.DersTekrarı.resources
 C:\Users\Hp\source\repos\exp_01_CSharpTemelleri\k08_Diziler\obj\Debug\k08_Diziler.RandomPasswordGenerator.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k08_Diziler\obj\Debug\k08_Diziler.DersTekrarı.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k08_Diziler\obj\Debug\k08_Diziler.Form3.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k08_Diziler\obj\Debug\k08_Diziler.RandomPasswordGenerator.resources

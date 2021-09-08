@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k07_Donguler", "k07_Dongule
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k08_Diziler", "k08_Diziler\k08_Diziler.csproj", "{A2D4EE3A-3A1C-49A0-B688-80AD51DE32FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k09_ArraySinifi", "k09_ArraySinifi\k09_ArraySinifi.csproj", "{0F4B4B25-0985-43AA-9801-4639812DCA7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkranKoruyucu", "EkranKoruyucu\EkranKoruyucu.csproj", "{FA1BBFFD-DCEF-4C63-A88C-15FD10CC5391}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{A2D4EE3A-3A1C-49A0-B688-80AD51DE32FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2D4EE3A-3A1C-49A0-B688-80AD51DE32FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2D4EE3A-3A1C-49A0-B688-80AD51DE32FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F4B4B25-0985-43AA-9801-4639812DCA7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4B4B25-0985-43AA-9801-4639812DCA7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4B4B25-0985-43AA-9801-4639812DCA7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4B4B25-0985-43AA-9801-4639812DCA7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA1BBFFD-DCEF-4C63-A88C-15FD10CC5391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA1BBFFD-DCEF-4C63-A88C-15FD10CC5391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA1BBFFD-DCEF-4C63-A88C-15FD10CC5391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA1BBFFD-DCEF-4C63-A88C-15FD10CC5391}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
