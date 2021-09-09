@@ -1,0 +1,11 @@
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\bin\Debug\k10_HazirFonksiyonlar.exe.config
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\bin\Debug\k10_HazirFonksiyonlar.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\bin\Debug\k10_HazirFonksiyonlar.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\obj\Debug\k10_HazirFonksiyonlar.csprojAssemblyReference.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\obj\Debug\k10_HazirFonksiyonlar.MatematikFonksiyonlari.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\obj\Debug\k10_HazirFonksiyonlar.Properties.Resources.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\obj\Debug\k10_HazirFonksiyonlar.csproj.GenerateResource.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\obj\Debug\k10_HazirFonksiyonlar.csproj.CoreCompileInputs.cache
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\obj\Debug\k10_HazirFonksiyonlar.exe
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\obj\Debug\k10_HazirFonksiyonlar.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\obj\Debug\k10_HazirFonksiyonlar.StringFonksiyonlar.resources
