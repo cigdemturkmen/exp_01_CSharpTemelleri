@@ -24,6 +24,8 @@ namespace k08_Diziler
 
         private void btnOlustur_Click(object sender, EventArgs e)
         {
+            txtSifre.Text = "";
+
             Random rnd = new Random();
 
             var rastgeleBuyuk = rnd.Next(65, 91);
@@ -45,7 +47,7 @@ namespace k08_Diziler
             {
                 if (cbBuyukHarf.Checked)
                 {
-                    txtSifre.Text = buyukHarf.ToString();
+                    txtSifre.Text += buyukHarf.ToString();
                 }
                 if (cbKucukHarf.Checked)
                 {
@@ -65,9 +67,11 @@ namespace k08_Diziler
                 int karakterUzunlugu = Convert.ToInt32(girilenKarakterSayisi);
                 var password = txtSifre.Text;
 
+                Random rnd2 = new Random();
+
                 for (int i = password.Length; i < karakterUzunlugu; i++)
                 {
-                    Random rnd2 = new Random();
+                    
                     var asciiKucukHarfler = rnd2.Next(97, 123);
                     char rastgeleharfler = Convert.ToChar(asciiKucukHarfler);
                     txtSifre.Text += rastgeleharfler.ToString();
