@@ -25,6 +25,7 @@ namespace k08_Diziler
         private void btnOlustur_Click(object sender, EventArgs e)
         {
             txtSifre.Text = "";
+
             Random rnd = new Random();
 
             var rastgeleBuyuk = rnd.Next(65, 91);

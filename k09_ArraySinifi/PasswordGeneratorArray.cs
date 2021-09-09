@@ -24,7 +24,30 @@ namespace k09_ArraySinifi
 
         private void btnOlustur_Click(object sender, EventArgs e)
         {
-            var karakterSayisi = Convert.ToInt32(txtKarakterSayisi);
+
+            // Kullanıcıdan kaç karakterli bir şifre oluşturmak istediğini alalım
+            // şifrenin içinde hangi tip karakterler geçmesini istediğini soralım ( büyük harf(0), küçük harf(1), rakam(2) veya sembol(3)) en az bir seçim yapmak zorunda olsun
+            // her biri için dizi oluşturalım
+            // hangi diziden seçim yapacağını rastgele seçmesi lazım
+            // Ju+w35
+            // bütün karakterleri tek bir char[]'e koyarak rastgele bu char dizisinden değer seçtirebilirdik.??TODO
+
+
+
+            //if (txtKarakterSayisi.Text == null || txtKarakterSayisi.Text == "") // txtbox boşsa hata verelim
+            if (string.IsNullOrEmpty(txtKarakterSayisi.Text)) 
+                // true ise(yani bu haliyle) null veya boş olabilir; false ise boş değildir.
+            {
+                MessageBox.Show("Karakter sayısını boş bırakmayınız.");
+                return;
+            }
+            var karakterSayisi = Convert.ToInt32(txtKarakterSayisi.Text);
+
+            if (!(cbBuyukHarf.Checked || cbKucukHarf.Checked || cbRakam.Checked || cbSembol.Checked))
+            {
+                MessageBox.Show("En az bir checkbox seçiniz.");
+                return;
+            }
 
             var buyukHarfler = new char[0];
             var kucukHarfler = new char[0];
@@ -32,7 +55,6 @@ namespace k09_ArraySinifi
             var semboller = new char[0];
 
             //dizi içleri for ile doldurulabilir
-
             for (char i = 'A'; i <= 'Z'; i++)
            
             {
@@ -60,55 +82,64 @@ namespace k09_ArraySinifi
             }
 
             Random rnd = new Random();
-            var hangiDizidenSecimYapilsin = rnd.Next(0, 4); //0, 1, 2, 3
+            var sifre = "";
+            
 
             //if (hangiDizidenSecimYapilsin == 0)
             //{
             //    //buyuk harflerden rastgele seçip şifrenin içine ekleyeceğiz.
-            //}
+            //} 
+            //if'li bloku switch-case'le yaptık. sonra while eklemek zorunda kaldık.for olmadı.
 
-            var sifre = "";
-            switch (hangiDizidenSecimYapilsin)
+            while (sifre.Length < karakterSayisi) // lenght değeri hiç karakter yoksa 0 alır.
             {
-                case 0:
-                    //buyuklerden seç
-                    if (cbBuyukHarf.Checked)
-                    {
-                        var rastgeleIndex = rnd.Next(0, buyukHarfler.Length);
-                        var secilenHarf = buyukHarfler[rastgeleIndex];
-                        sifre += secilenHarf;
-                    }
-                    break;
-                case 1:
-                    //kucuklerden sec
-                    if (cbKucukHarf.Checked)
-                    {
-                        var rastgeleIndex = rnd.Next(0, kucukHarfler.Length);
-                        var secilenHarf = kucukHarfler[rastgeleIndex];
-                        sifre += secilenHarf;
-                    }
-                    break;
-                case 2:
-                    //rakamlardan sec
-                    if (cbRakam.Checked)
-                    {
-                        var rastgeleIndex = rnd.Next(0, rakamlar.Length);
-                        var secilenHarf = rakamlar[rastgeleIndex];
-                        sifre += secilenHarf;
-                    }
-                    break;
-                case 3:
-                    //sembollerden sec
-                    if (cbSembol.Checked)
-                    {
-                        var rastgeleIndex = rnd.Next(0, semboller.Length);
-                        var secilenHarf = semboller[rastgeleIndex];
-                        sifre += secilenHarf;
-                    }
-                    break;
+                var hangiDizidenSecimYapilsin = rnd.Next(0, 4); //0, 1, 2, 3
 
-                //default:
+                switch (hangiDizidenSecimYapilsin)
+                {
+                    case 0:
+                        //buyuklerden seç
+                        if (cbBuyukHarf.Checked)
+                        {
+                            var rastgeleIndex = rnd.Next(0, buyukHarfler.Length);
+                            var secilenHarf = buyukHarfler[rastgeleIndex];
+                            sifre += secilenHarf;
+                        }
+                        break;
+                    case 1:
+                        //kucuklerden sec
+                        if (cbKucukHarf.Checked)
+                        {
+                            var rastgeleIndex = rnd.Next(0, kucukHarfler.Length);
+                            var secilenHarf = kucukHarfler[rastgeleIndex];
+                            sifre += secilenHarf;
+                        }
+                        break;
+                    case 2:
+                        //rakamlardan sec
+                        if (cbRakam.Checked)
+                        {
+                            var rastgeleIndex = rnd.Next(0, rakamlar.Length);
+                            var secilenHarf = rakamlar[rastgeleIndex];
+                            sifre += secilenHarf;
+                        }
+                        break;
+                    case 3:
+                        //sembollerden sec
+                        if (cbSembol.Checked)
+                        {
+                            var rastgeleIndex = rnd.Next(0, semboller.Length);
+                            var secilenHarf = semboller[rastgeleIndex];
+                            sifre += secilenHarf;
+                        }
+                        break;
+
+                        //default:
+                }
+
             }
+
+            lstSifreler.Items.Add(sifre);
         }
     }
 }
