@@ -17,8 +17,9 @@ namespace k10_HazirFonksiyonlar
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MatematikFonksiyonlari());
-            Application.Run(new StringFonksiyonlar());
-            Application.Run(new MatematikFonksiyonlari());
+            //Application.Run(new StringFonksiyonlar());
+            //Application.Run(new MatematikFonksiyonlari());
+            Application.Run(new DateTimeFonksiyonlar());
         }
     }
 }

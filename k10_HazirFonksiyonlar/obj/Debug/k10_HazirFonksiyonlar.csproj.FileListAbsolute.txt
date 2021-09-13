@@ -9,3 +9,4 @@ C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonla
 C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\obj\Debug\k10_HazirFonksiyonlar.exe
 C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\obj\Debug\k10_HazirFonksiyonlar.pdb
 C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\obj\Debug\k10_HazirFonksiyonlar.StringFonksiyonlar.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k10_HazirFonksiyonlar\obj\Debug\k10_HazirFonksiyonlar.DateTimeFonksiyonlar.resources

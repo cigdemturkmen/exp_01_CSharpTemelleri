@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DateTimeFonksiyonlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateTimeFonksiyonlar.Designer.cs">
+      <DependentUpon>DateTimeFonksiyonlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="MatematikFonksiyonlari.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="TestForm.Designer.cs">
       <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DateTimeFonksiyonlar.resx">
+      <DependentUpon>DateTimeFonksiyonlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MatematikFonksiyonlari.resx">
       <DependentUpon>MatematikFonksiyonlari.cs</DependentUpon>
     </EmbeddedResource>

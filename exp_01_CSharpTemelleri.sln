@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EkranKoruyucu", "EkranKoruy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k10_HazirFonksiyonlar", "k10_HazirFonksiyonlar\k10_HazirFonksiyonlar.csproj", "{E256B6CE-4EDF-44E0-92AA-9EC1176F3197}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "k11_Metodlar", "k11_Metodlar\k11_Metodlar.csproj", "{398263B3-7579-4534-8305-B862A24C320B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{E256B6CE-4EDF-44E0-92AA-9EC1176F3197}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E256B6CE-4EDF-44E0-92AA-9EC1176F3197}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E256B6CE-4EDF-44E0-92AA-9EC1176F3197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{398263B3-7579-4534-8305-B862A24C320B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{398263B3-7579-4534-8305-B862A24C320B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{398263B3-7579-4534-8305-B862A24C320B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{398263B3-7579-4534-8305-B862A24C320B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

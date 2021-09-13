@@ -44,18 +44,15 @@ namespace k10_HazirFonksiyonlar
             var mutlakDeger = Math.Abs(-143);
             var md1 = Math.Abs(-1.143);
             txtSonuc.Text = mutlakDeger.ToString();
-      
         }
 
-        //Math.Ceilin(1.23m);  Math.Floor(1.55);  Math.Round(3.8);
+        //Math.Ceiling(1.23m);  Math.Floor(1.55);  Math.Round(3.8);
         //Math.Round(43.122765, 2); sonuç= 43.12
 
         private void btnTruncate_Click(object sender, EventArgs e)
         {
-            //virgüllü sayının tam kısmını almak için kullanılır.
-            var sayi = Math.Truncate(43.45679);
-
-            //sonuç = 43
+            //virgüllü sayının tam kısmını almak için kullanılır. ondalıklı kısmı boşaltır.
+            var sayi = Math.Truncate(43.45679); //sonuç = 43
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -77,11 +74,12 @@ namespace k10_HazirFonksiyonlar
 
         }
 
-        //Math.Min(10, 2); sonuç 2  Math.Max(10, 2); sonuç 10
+        //Math.Min(10, 2); sonuç 2 -- Math.Max(10, 2); sonuç 10
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //en büyük sayıyı buldur. min max ile yapacaktın!
+            //en büyük sayıyı buldur. 
+            //TODO min max ile yapacaktın!
             int sayi1 = Convert.ToInt32(txtSayi1.Text);
             int sayi2 = Convert.ToInt32(txtSayi2.Text);
             int sayi3 = Convert.ToInt32(txtSayi3.Text);
@@ -98,14 +96,6 @@ namespace k10_HazirFonksiyonlar
             {
                 MessageBox.Show($"En üyük sayı {txtSayi3.Text}");
             }
-
-
         }
-
-
-
-       
-
-
     }
 }

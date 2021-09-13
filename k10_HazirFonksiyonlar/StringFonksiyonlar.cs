@@ -15,20 +15,19 @@ namespace k10_HazirFonksiyonlar
         public StringFonksiyonlar()
         {
             InitializeComponent();
-            //1. sırada bu çalışır.
+            //1. sırada bu çalışır.(constructure)
         }
 
         private void StringFonksiyonlar_Load(object sender, EventArgs e)
         {
-            //2. sırada bu çalışır.
+            //2. sırada bu çalışır. (form load event)
         }
         string ornekIfade = "bilge adam";
         private void button11_Click(object sender, EventArgs e)
         {
             /*karşılaştırma yapılan değer alfabedeki karşılaştırılan değerden sonraysa 1 değeri, aynıysa 0, değerden önceyse -1 değerini döner. */
 
-            //which string comes first in dictionary karşılaştırması
-
+            //Compareto: which string comes first in dictionary karşılaştırması
 
             var sonuc = ornekIfade.CompareTo("abilge adam"); //1
             var sonuc1 = ornekIfade.CompareTo("zbilge adam"); //-1
@@ -59,12 +58,11 @@ namespace k10_HazirFonksiyonlar
         {
             var sonuc = ornekIfade.Remove(4); //4. index'ten başalayıp sona kadar siler.
             var sonuc1 = ornekIfade.Remove(3, 4); //3. index'ten başlayıp 4 karakter sildi.
-
         }
 
         private void btnReplace_Click(object sender, EventArgs e)
         {
-            var sonuc = ornekIfade.Replace('a', 'e').Replace('e', 'ı'); //bilge edem-  ???
+            var sonuc = ornekIfade.Replace('a', 'e').Replace('e', 'ı'); //bilge edem-  ???check
 
             var sonuc1 = ornekIfade.Replace("adam", "kadın"); //bilge kadın
         }
@@ -78,10 +76,7 @@ namespace k10_HazirFonksiyonlar
 
             var engKarakterkliAd = adSoyadKucuk.Replace('ç', 'c').Replace('ğ', 'g').Replace('ı', 'i').Replace('ö', 'o').Replace('ü', 'u').Replace('ş', 's').Replace(' ', '.');
 
-
-
             MessageBox.Show($"{engKarakterkliAd}@gmail.com");
-
         }
 
         private void btnInsert_Click(object sender, EventArgs e)
