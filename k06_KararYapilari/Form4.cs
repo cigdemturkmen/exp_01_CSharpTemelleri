@@ -15,6 +15,7 @@ namespace k06_KararYapilari
         public Form4()
         {
             InitializeComponent();
+            //Burası constructure.
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -22,8 +23,9 @@ namespace k06_KararYapilari
 
         }
 
-
-        /*Kullanıcının aldığı kitap sayısına göre toplam fiyatı gerekli inidirimleri yaparak hesapla ve kullanıcıya göster.
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            /*Kullanıcının aldığı kitap sayısına göre toplam fiyatı gerekli inidirimleri yaparak hesapla ve kullanıcıya göster.
          * Her kitabın fiyatı 10.
          * 20'den az kitap alıyorsa birim fiyat üzerinden işlem yap.
          * 20 ile 50 arasında kitap alıyorsa %5 indirim,
@@ -31,16 +33,11 @@ namespace k06_KararYapilari
          * 100 ile 200 arasında kitap alıyorsa %20 indirim,
          * 200'den fazla kitap alıyorsa %25 indirim uygula.
          */
-
-        private void btnCalculate_Click(object sender, EventArgs e)
-        {
             try
             {
-                var inputNumber = txtInput.Text;
-                int numberOfBooks = Convert.ToInt32(inputNumber);
+                int numberOfBooks = Convert.ToInt32(txtInput.Text);
                 var bookPrice = 10;
                 double discount = 0;
-
 
                 if (numberOfBooks > 0 && numberOfBooks < 20)
                 {
@@ -66,15 +63,13 @@ namespace k06_KararYapilari
                 {
                     MessageBox.Show("Lütfen geçerli bir sayı giriniz.");
                 }
+
                 txtPrice.Text = (numberOfBooks * bookPrice * (1 - discount)).ToString();
             }
             catch (Exception)
             {
-
-                MessageBox.Show("Lütfen makul bir sayı giriniz");
+                MessageBox.Show("Lütfen makul bir sayı giriniz."); //int'in sınırlarını aşan bir rakam girildiğinde catch'e düşecek.
             }
         }
-
-
     }
 }

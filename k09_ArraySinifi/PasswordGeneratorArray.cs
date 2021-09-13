@@ -24,19 +24,18 @@ namespace k09_ArraySinifi
 
         private void btnOlustur_Click(object sender, EventArgs e)
         {
-
             // Kullanıcıdan kaç karakterli bir şifre oluşturmak istediğini alalım
-            // şifrenin içinde hangi tip karakterler geçmesini istediğini soralım ( büyük harf(0), küçük harf(1), rakam(2) veya sembol(3)) en az bir seçim yapmak zorunda olsun
-            // her biri için dizi oluşturalım
-            // hangi diziden seçim yapacağını rastgele seçmesi lazım
+            // Şifrenin içinde hangi tip karakterler geçmesini istediğini soralım(büyük harf(0), küçük harf(1), rakam(2) veya sembol(3)) en az bir seçim yapmak zorunda olsun
+            // Her biri için dizi oluşturalım
+            // Hangi diziden seçim yapacağını rastgele seçmesi lazım
             // Ju+w35
-            // bütün karakterleri tek bir char[]'e koyarak rastgele bu char dizisinden değer seçtirebilirdik.??TODO
+            // Bütün karakterleri tek bir char[]'e koyarak rastgele bu char dizisinden değer seçtirebilirdik.??TODO
 
 
 
-            //if (txtKarakterSayisi.Text == null || txtKarakterSayisi.Text == "") // txtbox boşsa hata verelim
-            if (string.IsNullOrEmpty(txtKarakterSayisi.Text)) 
-                // true ise(yani bu haliyle) null veya boş olabilir; false ise boş değildir.
+            // if (txtKarakterSayisi.Text == null || txtKarakterSayisi.Text == "") // txtbox boşsa hata verelim
+            if (string.IsNullOrEmpty(txtKarakterSayisi.Text))
+            // true ise(yani bu haliyle) null veya boş olabilir; false ise boş değildir.
             {
                 MessageBox.Show("Karakter sayısını boş bırakmayınız.");
                 return;
@@ -54,9 +53,9 @@ namespace k09_ArraySinifi
             var rakamlar = new char[0];
             var semboller = new char[0];
 
-            //dizi içleri for ile doldurulabilir
+            // dizi içleri for ile doldurulabilir
             for (char i = 'A'; i <= 'Z'; i++)
-           
+
             {
                 Array.Resize(ref buyukHarfler, buyukHarfler.Length + 1);
                 buyukHarfler[buyukHarfler.Length - 1] = i;
@@ -83,7 +82,7 @@ namespace k09_ArraySinifi
 
             Random rnd = new Random();
             var sifre = "";
-            
+
 
             //if (hangiDizidenSecimYapilsin == 0)
             //{

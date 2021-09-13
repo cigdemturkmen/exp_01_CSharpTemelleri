@@ -40,9 +40,10 @@
             // 
             // btnCopy
             // 
-            this.btnCopy.Location = new System.Drawing.Point(48, 23);
+            this.btnCopy.Location = new System.Drawing.Point(69, 319);
+            this.btnCopy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCopy.Name = "btnCopy";
-            this.btnCopy.Size = new System.Drawing.Size(193, 52);
+            this.btnCopy.Size = new System.Drawing.Size(149, 52);
             this.btnCopy.TabIndex = 0;
             this.btnCopy.Text = "Copy()";
             this.btnCopy.UseVisualStyleBackColor = true;
@@ -51,16 +52,19 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(48, 99);
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(69, 29);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 160);
+            this.listBox1.Size = new System.Drawing.Size(165, 260);
             this.listBox1.TabIndex = 1;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(272, 20);
+            this.btnClear.Location = new System.Drawing.Point(69, 402);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(136, 55);
+            this.btnClear.Size = new System.Drawing.Size(149, 52);
             this.btnClear.TabIndex = 2;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -68,9 +72,10 @@
             // 
             // btnIndexOf
             // 
-            this.btnIndexOf.Location = new System.Drawing.Point(442, 38);
+            this.btnIndexOf.Location = new System.Drawing.Point(310, 319);
+            this.btnIndexOf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIndexOf.Name = "btnIndexOf";
-            this.btnIndexOf.Size = new System.Drawing.Size(135, 65);
+            this.btnIndexOf.Size = new System.Drawing.Size(149, 52);
             this.btnIndexOf.TabIndex = 3;
             this.btnIndexOf.Text = "Index Of";
             this.btnIndexOf.UseVisualStyleBackColor = true;
@@ -78,9 +83,10 @@
             // 
             // btnLastIndexOf
             // 
-            this.btnLastIndexOf.Location = new System.Drawing.Point(452, 127);
+            this.btnLastIndexOf.Location = new System.Drawing.Point(310, 402);
+            this.btnLastIndexOf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLastIndexOf.Name = "btnLastIndexOf";
-            this.btnLastIndexOf.Size = new System.Drawing.Size(110, 35);
+            this.btnLastIndexOf.Size = new System.Drawing.Size(149, 52);
             this.btnLastIndexOf.TabIndex = 4;
             this.btnLastIndexOf.Text = "last index of";
             this.btnLastIndexOf.UseVisualStyleBackColor = true;
@@ -88,9 +94,10 @@
             // 
             // btnReverse
             // 
-            this.btnReverse.Location = new System.Drawing.Point(609, 38);
+            this.btnReverse.Location = new System.Drawing.Point(551, 319);
+            this.btnReverse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReverse.Name = "btnReverse";
-            this.btnReverse.Size = new System.Drawing.Size(139, 52);
+            this.btnReverse.Size = new System.Drawing.Size(149, 52);
             this.btnReverse.TabIndex = 5;
             this.btnReverse.Text = "Reverse";
             this.btnReverse.UseVisualStyleBackColor = true;
@@ -98,9 +105,10 @@
             // 
             // btnSort
             // 
-            this.btnSort.Location = new System.Drawing.Point(609, 108);
+            this.btnSort.Location = new System.Drawing.Point(551, 402);
+            this.btnSort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSort.Name = "btnSort";
-            this.btnSort.Size = new System.Drawing.Size(121, 48);
+            this.btnSort.Size = new System.Drawing.Size(149, 52);
             this.btnSort.TabIndex = 6;
             this.btnSort.Text = "Sort";
             this.btnSort.UseVisualStyleBackColor = true;
@@ -108,9 +116,10 @@
             // 
             // btnResize
             // 
-            this.btnResize.Location = new System.Drawing.Point(609, 180);
+            this.btnResize.Location = new System.Drawing.Point(792, 319);
+            this.btnResize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnResize.Name = "btnResize";
-            this.btnResize.Size = new System.Drawing.Size(112, 42);
+            this.btnResize.Size = new System.Drawing.Size(149, 52);
             this.btnResize.TabIndex = 7;
             this.btnResize.Text = "Resize";
             this.btnResize.UseVisualStyleBackColor = true;
@@ -118,9 +127,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.btnResize);
             this.Controls.Add(this.btnSort);
             this.Controls.Add(this.btnReverse);
@@ -129,6 +138,7 @@
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnCopy);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

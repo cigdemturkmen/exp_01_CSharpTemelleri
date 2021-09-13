@@ -37,23 +37,26 @@
             // 
             // txtVize
             // 
-            this.txtVize.Location = new System.Drawing.Point(106, 29);
+            this.txtVize.Location = new System.Drawing.Point(141, 36);
+            this.txtVize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtVize.Name = "txtVize";
-            this.txtVize.Size = new System.Drawing.Size(100, 20);
+            this.txtVize.Size = new System.Drawing.Size(132, 22);
             this.txtVize.TabIndex = 0;
             // 
             // txtFinal
             // 
-            this.txtFinal.Location = new System.Drawing.Point(106, 55);
+            this.txtFinal.Location = new System.Drawing.Point(141, 68);
+            this.txtFinal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFinal.Name = "txtFinal";
-            this.txtFinal.Size = new System.Drawing.Size(100, 20);
+            this.txtFinal.Size = new System.Drawing.Size(132, 22);
             this.txtFinal.TabIndex = 1;
             // 
             // btnHesapla
             // 
-            this.btnHesapla.Location = new System.Drawing.Point(131, 81);
+            this.btnHesapla.Location = new System.Drawing.Point(175, 100);
+            this.btnHesapla.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnHesapla.Name = "btnHesapla";
-            this.btnHesapla.Size = new System.Drawing.Size(75, 23);
+            this.btnHesapla.Size = new System.Drawing.Size(100, 28);
             this.btnHesapla.TabIndex = 2;
             this.btnHesapla.Text = "Hesapla";
             this.btnHesapla.UseVisualStyleBackColor = true;
@@ -62,33 +65,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 29);
+            this.label1.Location = new System.Drawing.Point(63, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(69, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Vize Notu";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 61);
+            this.label2.Location = new System.Drawing.Point(61, 75);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.Size = new System.Drawing.Size(72, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Final Notu";
             // 
             // NotHesaplama
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnHesapla);
             this.Controls.Add(this.txtFinal);
             this.Controls.Add(this.txtVize);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "NotHesaplama";
             this.Text = "NotHesaplama";
+            this.Load += new System.EventHandler(this.NotHesaplama_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

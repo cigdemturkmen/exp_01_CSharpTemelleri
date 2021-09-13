@@ -12,6 +12,7 @@ namespace k08_Diziler
 {
     public partial class Form1 : Form
     {
+        //Bu formda array'lerin farklı gösterim biçimleri anlatılıyor.
         public Form1()
         {
             InitializeComponent();
@@ -25,16 +26,16 @@ namespace k08_Diziler
             int[] sayilar2 = new int[] { 10, 11, 12, 13, 14 };
 
             //var isimler = { "ali", "veli", "ayşe" }; böyle yazamazsın, ='den sonra data type yazmalısın!
-            var isimler2 = new string[] { "ali", null, "ayşe" };
+            var isimler2 = new string[] { "ali", null, "ayşe" }; // yani = new var[] olmuyor :D
 
             //3.GÖSTERİM:
-            var iller = new string[3]; //bu gösterimde elemanları aynı ayrı tanımlaman lazım. bu içi boş bir dizidir:
+            var iller = new string[3]; 
+            //Bu gösterimde elemanları ayrı ayrı aşağıdaki gibi tanımlaman lazım. Bu şu an boş bir dizidir. içi boş dizi oluştururken eleman sayısını belirtmek zorundasın.
+
             iller[0] = "Ankara";
             iller[1] = "İstanbul";
             //iller[2] = "İzmir"; //boş olan elemanlar NULL olur.
-            //iller[3] = "Ankara"; //Dizinin 4. elemanlı olmadığı için uyarı verir:
-            //System.IndexOutOfRangeException:'Dizin, dizi sınırlarının dışındaydı.' 
-
+            //iller[3] = "Ankara"; //Dizinin 4. elemanı olmadığı için uyarı verir: System.IndexOutOfRangeException:'Dizin, dizi sınırlarının dışındaydı.' 
         }
 
         private void Form1_Load(object sender, EventArgs e)

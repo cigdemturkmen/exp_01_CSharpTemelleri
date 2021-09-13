@@ -36,9 +36,10 @@
             // 
             // btnAra
             // 
-            this.btnAra.Location = new System.Drawing.Point(126, 127);
+            this.btnAra.Location = new System.Drawing.Point(168, 156);
+            this.btnAra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAra.Name = "btnAra";
-            this.btnAra.Size = new System.Drawing.Size(100, 23);
+            this.btnAra.Size = new System.Drawing.Size(133, 28);
             this.btnAra.TabIndex = 0;
             this.btnAra.Text = "Ara";
             this.btnAra.UseVisualStyleBackColor = true;
@@ -46,9 +47,10 @@
             // 
             // txtUrunAdi
             // 
-            this.txtUrunAdi.Location = new System.Drawing.Point(126, 91);
+            this.txtUrunAdi.Location = new System.Drawing.Point(168, 112);
+            this.txtUrunAdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUrunAdi.Name = "txtUrunAdi";
-            this.txtUrunAdi.Size = new System.Drawing.Size(100, 20);
+            this.txtUrunAdi.Size = new System.Drawing.Size(132, 22);
             this.txtUrunAdi.TabIndex = 1;
             // 
             // label1
@@ -56,9 +58,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(130, 62);
+            this.label1.Location = new System.Drawing.Point(173, 76);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 17);
+            this.label1.Size = new System.Drawing.Size(109, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ürünü giriniz:";
             // 
@@ -66,24 +69,27 @@
             // 
             this.lblYonlendirme.AutoSize = true;
             this.lblYonlendirme.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblYonlendirme.Location = new System.Drawing.Point(37, 198);
+            this.lblYonlendirme.Location = new System.Drawing.Point(49, 244);
+            this.lblYonlendirme.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblYonlendirme.Name = "lblYonlendirme";
-            this.lblYonlendirme.Size = new System.Drawing.Size(0, 25);
+            this.lblYonlendirme.Size = new System.Drawing.Size(0, 29);
             this.lblYonlendirme.TabIndex = 3;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 339);
+            this.ClientSize = new System.Drawing.Size(471, 407);
             this.Controls.Add(this.lblYonlendirme);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUrunAdi);
             this.Controls.Add(this.btnAra);
-            this.MaximumSize = new System.Drawing.Size(371, 378);
-            this.MinimumSize = new System.Drawing.Size(371, 378);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(489, 454);
+            this.MinimumSize = new System.Drawing.Size(489, 454);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

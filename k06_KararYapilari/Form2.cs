@@ -19,37 +19,50 @@ namespace k06_KararYapilari
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            //Bu bir denemedir. form açıldığında çalışacak mı bakacağım. Çalıştı :)
+            MessageBox.Show("Form açılmak üzere.");
         }
 
         private void btnKontrolEt_Click(object sender, EventArgs e)
         {
-            //girilen şifrenin uzunluğu 8den küçükse şifre güvensiz yaz eşitse daha güçlü şifre yazılabilir. 8den büyükse güçlü şifre yaz.
+            //Girilen şifrenin uzunluğu 8'den küçükse şifre güvensiz yaz; eşitse daha güçlü şifre yazılabilir yaz. 8'den büyükse güçlü şifre yaz
 
             var sifre = txtPassword.Text;
 
+            if (string.IsNullOrEmpty(txtPassword.Text))
+            {
+                MessageBox.Show("Lütfen oluşturmak istediğiniz şifreyi giriniz.");
+            }
+
             if (sifre.Length <8)
             {
-                MessageBox.Show("güvensiz şifre");
+                MessageBox.Show("Güvensiz şifre!");
             }
             else if (sifre.Length == 8)
             {
-                MessageBox.Show("daha güçlü şifre yazılabilir");
+                MessageBox.Show("Daha güçlü bir şifre yazılabilir.");
             }
             else
             {
-                MessageBox.Show("güçlü şifre");
+                MessageBox.Show("Güçlü şifre!");
             }
         }
 
         private void btnGirisYap_Click(object sender, EventArgs e)
         {
+            //Kullanıcı adi ve parola doğru yazılırsa "Giriş başarılı!" yazsın. Hatalı yazılırsa da ona göre mesaj kutusunda mesaj verilsin
             var kullaniciAdi = txtKullaniciAdi.Text.ToLower();
             var password = txtKullaniciParolasi.Text.ToString();
 
+            if (kullaniciAdi == "" || password == "") //herhangi bir kutucuğa bilgi girilmezse bu blok çalışır
+            {
+                MessageBox.Show("Kullanıcı adı ve parolanızı giriniz.");
+                return; //Bu kod bloğu çalışırsa, en sondaki else çalışmasın diye return; ekledim. return'den sonraki kodların hiçbiri çalışmaz.
+            }
+
             if (kullaniciAdi == "admin" && password == "1234" )
             {
-                MessageBox.Show("Hoşgeldiniz!");
+                MessageBox.Show("Giriş başarılı!");
             }
             else if (kullaniciAdi != "admin" && password == "1234")
             {

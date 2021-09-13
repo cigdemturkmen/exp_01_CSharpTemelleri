@@ -17,30 +17,54 @@ namespace k06_KararYapilari
             InitializeComponent();
         }
 
+        private void NotHesaplama_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnHesapla_Click(object sender, EventArgs e)
         {
-            var vize = txtVize.Text;
-            double dblVize = Convert.ToDouble(vize);
-            var final = txtFinal.Text;
-            double dblFinal = Convert.ToDouble(final);
-            var ortalama = (dblVize * 0.30) + (dblFinal * 0.70);
-            string strOrtalama = Convert.ToString(ortalama);
+            try
+            {
+                double dblVize = Convert.ToDouble(txtVize.Text);
+                double dblFinal = Convert.ToDouble(txtFinal.Text);
 
-            if (ortalama <=30)
-            {
-                MessageBox.Show($"Not ortalamanız: {strOrtalama}. Notunuz FF. Kaldınız");
+                var ortalama = (dblVize * 0.30) + (dblFinal * 0.70);
+                string strOrtalama = Convert.ToString(ortalama);
+
+                if (dblVize>100 || dblFinal>100 || dblVize<0 || dblFinal<0)
+                {
+                    MessageBox.Show("Lütfen 0 ile 100 arasında geçerli bir not giriniz.");
+                    return;
+                }
+
+                if (ortalama <= 30)
+                {
+                    MessageBox.Show($"Not ortalamanız: {strOrtalama}. Notunuz FF. Kaldınız");
+                }
+                else if (ortalama > 30 && ortalama < 50)
+                {
+                    MessageBox.Show($"Not ortalamanız: {strOrtalama}. Notunuz DD. Kaldınız");
+                }
+                else if (ortalama >= 50 && ortalama < 60)
+                {
+                    MessageBox.Show($"Not ortalamanız: {strOrtalama}. Notunuz CC. Geçtiniz");
+                }
+                else if (ortalama >= 60 && ortalama < 80)
+                {
+                    MessageBox.Show($"Not ortalamanız: {strOrtalama}. Notunuz BB. Geçtiniz");
+                }
+                else if (ortalama >= 80 && ortalama <= 100)
+                {
+                    MessageBox.Show($"Not ortalamanız: {strOrtalama}. Notunuz AA. Geçtiniz");
+                }
+                txtVize.Text = "";
+                txtFinal.Text = "";
             }
-            else if (ortalama > 30 && ortalama < 50)
+            catch (Exception)
             {
-                MessageBox.Show($"Not ortalamanız: {strOrtalama}. Notunuz DD. Kaldınız");
-            }
-            else if (ortalama>=50 && ortalama<60 )
-            {
-                MessageBox.Show($"Not ortalamanız: {strOrtalama}. Notunuz CC. Geçtiniz");
-            }
-            else if (ortalama >= 60 && ortalama <= 100)
-            {
-                MessageBox.Show($"Not ortalamanız: {strOrtalama}. Notunuz AA. Geçtiniz");
+                MessageBox.Show("Lütfen vize ve final notları için geçerli sayılar giriniz.");
+                
             }
         }
     }

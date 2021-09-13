@@ -19,13 +19,13 @@ namespace k09_ArraySinifi
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            /*Array Sınıfı: dizilerle ilgili bazı işlemleri(kopyalama, yeniden boyutlandırma, sıralama vb) yapmamıza yardımcı olan metodları içerir.*/
+            /*Array Sınıfı: Dizilerle ilgili bazı işlemleri(kopyalama, yeniden boyutlandırma, sıralama vb.) yapmamıza yardımcı olan metodları içerir.*/
         }
 
         string[] isimler = { "ömer", "leyla", "batuhan", "çiğdem", "bahar", "serdar", "orkun", "batuhan", "anıl", "mustafa", "utku", "yasemin", "eray", "kaan", "mert" };
         private void btnCopy_Click(object sender, EventArgs e)
         {
-            //copy
+            //Copy
             /*bu sınıftaki tüm öğrencilerin isimlerini bir dizi olarak tanımlayınız ve sonrasında online katılımcılar ve fiziksel katılımcılar isimli iki dizi yaparak buraya kopyalayınız.*/
 
             string[] fizikselKatilimcilar = new string[9];
@@ -43,17 +43,16 @@ namespace k09_ArraySinifi
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            //Clear
             //isimlerde 2. indeksten başlayarak 3 elemanı sil(null ata)
             Array.Clear(isimler, 2, 3);
-
         }
 
         private void btnIndexOf_Click(object sender, EventArgs e)
         {
+            //IndexOf
             //aradığınız eleman dizi içinde geçmiyorsa -1 döner.
             //aranılan değeri ilk bulduğu indexi döner.
-            Array.IndexOf(isimler, "çiğdem");
-
             var bulunanIndex = Array.IndexOf(isimler, "çiğdem");
 
             if (bulunanIndex != -1)
@@ -64,15 +63,12 @@ namespace k09_ArraySinifi
             {
                 MessageBox.Show("Böyle bir eleman yok");
             }
-
-
         }
 
         private void btnLastIndexOf_Click(object sender, EventArgs e)
         {
-            Array.LastIndexOf(isimler, "çiğdem");
-
-            var bulunanIndex = Array.IndexOf(isimler, "çiğdem");
+            //LastIndexOf
+            var bulunanIndex = Array.LastIndexOf(isimler, "çiğdem");
 
             if (bulunanIndex != -1)
             {
@@ -82,26 +78,23 @@ namespace k09_ArraySinifi
             {
                 MessageBox.Show("Böyle bir eleman yok");
             }
-
-
         }
 
         private void btnReverse_Click(object sender, EventArgs e)
         {
-            //reverse diziyi ters çevirir.
+            //Reverse: diziyi ters çevirir.
             Array.Reverse(isimler);
         }
 
         private void btnSort_Click(object sender, EventArgs e)
         {
-            //a'dan z'ye veya 0'dan 9'a artan sıralama yapar
-
+            //Sort: a'dan z'ye veya 0'dan 9'a artan sıralama yapar.(ascending order)
             Array.Sort(isimler);
         }
 
         private void btnResize_Click(object sender, EventArgs e)
         {
-            //yeniden boyutlandırma yapar.
+            /************************************************Resize: yeniden boyutlandırma yapar.**********************************************/
             Array.Resize(ref isimler, 20);
         }
     }
