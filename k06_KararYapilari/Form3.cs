@@ -17,35 +17,43 @@ namespace k06_KararYapilari
             InitializeComponent();
         }
 
+        private void Form3_Load(object sender, EventArgs e)
+        {
 
-        //kullanıcıdan alınan ürün bilgisine göre yönlendirilecek reyonu gösteren bir uygulama yapınız.
-
+        }
+        
         private void btnAra_Click(object sender, EventArgs e)
         {
+            //Kullanıcıdan alınan ürün bilgisine göre yönlendirilecek reyonu gösteren bir uygulama yapınız
+
             //WOW! ToLower ve ToString metodlarını art arda kullanabiliyoruz.
             var urun = txtUrunAdi.Text.ToString().ToLower();
 
+            if (urun == "")
+            {
+                MessageBox.Show("Lütfen aramak istediğiniz ürünü giriniz.");
+                return; //en sondaki else çalışmasın diye return; ekledim.
+            }
+
             if (urun == "bilgisayar" || urun == "cep telefonu" || urun == "minibook")
             {
-                lblYonlendirme.Text = "Teknoloji reyonuna ilerleyiniz";
+                lblYonlendirme.Text = "Teknoloji reyonuna ilerleyiniz.";
             }
 
             else if (urun == "parfüm" || urun == "deodorant" || urun == "şampuan")
             {
-                lblYonlendirme.Text = "Kişisel bakım reyonuna ilerleyiniz";
+                lblYonlendirme.Text = "Kişisel bakım reyonuna ilerleyiniz.";
             }
 
             else if (urun == "domates" || urun == "biber" || urun == "patlıcan")
             {
-                lblYonlendirme.Text = "Sebze reyonuna ilerleyiniz";
+                lblYonlendirme.Text = "Sebze reyonuna ilerleyiniz.";
             }
 
             else
             {
-                lblYonlendirme.Text = "Bu ürün bulunmamaktadır";
+                lblYonlendirme.Text = "Bu ürün bulunmamaktadır.";
             }
         }
-
-
     }
 }

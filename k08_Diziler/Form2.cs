@@ -43,14 +43,25 @@ namespace k08_Diziler
                 lstSonuc.Items.Add(item);
             }
 
-            //tek seferde tüm diziyi bir anda eklemek için;
+            //tek seferde tüm diziyi BİR ANDA eklemek için;
             lstSonuc.Items.AddRange(iller);
 
+
+            //PARDON DA! TEK TEK EKLEMEK DİYE ŞUNA DENİR;
+            //for (int i = 0; i < iller.Length; i++)
+            //{
+            //    if (!lstSonuc.Items.Contains(iller[i]))
+            //    {
+            //        lstSonuc.Items.Add(iller[i]);
+            //        return;
+            //    }
+            //}
+            //MessageBox.Show("Dizinin tüm elemanları eklendi.");
         }
 
         private void btnCifleriEkle_Click(object sender, EventArgs e)
         {
-            //1'den 10a kadar dizi oluştur. sonrasında bir listeye çift olan sayıları ekle diğerine tekleri ekle.
+            //1'den 10a kadar dizi oluştur. Sonrasında bir listeye çift olan sayıları ekle diğerine tekleri ekle.
 
             int[] sayilar = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
@@ -69,16 +80,17 @@ namespace k08_Diziler
 
         private void btn20ekle_Click(object sender, EventArgs e)
         {
-            //***20 elemanlı boş bir dizi oluştur.sonrasında 1'den 20ye sayıları diziye ekle. sonra dizi elemanlarının hepsini lstSonuc listesinde göster
+            //***20 elemanlı boş bir dizi oluştur. Sonrasında 1'den 20'ye kadar olan sayıları diziye ekle. Sonra dizi elemanlarının hepsini lstSonuc listesinde göster.
 
             int[] sayilar = new int[20]; //sayilar[0] = x
 
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 20; i++) //boş bir dizinin içini doldururken for kullanıyoruz.
             {
                 sayilar[i] = i + 1;
             }
 
-            //lstSonuc.Items.AddRange(sayilar); // bu kod çalışmadı.
+            //lstSonuc.Items.AddRange(sayilar); // bu kod çalışmadı. Halbuki yukarıdaki string dizinde çalışmıştı... ???!!!
+
 
             foreach (var sayi in sayilar)
             {
@@ -89,7 +101,7 @@ namespace k08_Diziler
 
 
 
-        /*******************************************bool için default değer false. int, byte, short,long için default değer = 0. float,docuble, decimal için default değer = 0.0. string için default değer = null. *******************************************/
+        /*******************************************bool için default değer = false. int, byte, short,long için default değer = 0. float,double, decimal için default değer = 0.0. String için default değer = null *******************************************/
 
 
 
@@ -108,41 +120,45 @@ namespace k08_Diziler
 
         private void btnRastgeleEleman_Click(object sender, EventArgs e)
         {
-            /*global olarak isimler dizisi oluştur(class'ın içinde; clickeventlerin içinde değil). sonra butona her basıldığında rastgele bir index seçsin ve bu indexteki isim listbox'a eklensin. bir eklenen isim bir daha eklenmesin ve tüm isimler bitince mb'da uyarı versin*/
+            /*global olarak isimler dizisi oluştur(class'ın içinde; clickeventlerin içinde değil). Sonra butona her basıldığında rastgele bir index seçsin ve bu indexteki isim listbox'a eklensin. Bir eklenen isim bir daha eklenmesin ve tüm isimler bitince mb'da uyarı versin*/
 
             Random rnd = new Random();
+            int randomIndex = rnd.Next(0, isimler.Length);
 
-            if (lstSonuc.Items.Contains(lstSonuc.Items) == false)
+            if (lstSonuc.Items.Contains(isimler[randomIndex]) == false)
             {
-                lstSonuc.Items.Add(isimler[rnd.Next(0, isimler.Length)]);
+                lstSonuc.Items.Add(isimler[randomIndex]);
             }
 
-            // MessageBox.Show("Ekleyecek eleman kalmadı!");
+            if (lstSonuc.Items.Count == isimler.Length)
+            {
+                btnRastgeleEleman.Enabled = false; //tüm elemanlar eklenince butonun inaktif hale gelmesi için.
+                MessageBox.Show("Ekleyecek eleman kalmadı!");
+            }
         }
 
-        Random rnd = new Random();
-
+        
         private void btnTopla_Click(object sender, EventArgs e)
         {
-            /*sayılar dizisi oluşturalım en az 7 tane sayı eklensin(rastgele sayılar oluşturulsun). sonra butona basıldığında dizideki elemanları listeye ekle ve eklenenlerin toplamı formun başlığında gösterilsin.*/
+            /*sayılar dizisi oluşturalım en az 7 tane sayı eklensin(rastgele sayılar oluşturulsun). Sonra butona basıldığında dizideki elemanları listeye ekle ve eklenenlerin toplamı formun başlığında gösterilsin.*/
+            Random rnd = new Random(); //instance: nesneden kopya almak demektir.
             var sayilar1 = new int[7];
-            int rastgele = rnd.Next(1, 11);
 
-            sayilar1[0] = rastgele;
-            sayilar1[1] = rastgele;
-            sayilar1[2] = rastgele;
-            sayilar1[3] = rastgele;
-            sayilar1[4] = rastgele;
-            sayilar1[5] = rastgele;
-            sayilar1[6] = rastgele;
+            for (int i = 0; i < sayilar1.Length; i++)
+            {
+                int rastgeleSayi = rnd.Next(1, 101);
+                sayilar1[i] = rastgeleSayi;
+            }
+
+            var toplam = 0;
 
             foreach (var item in sayilar1)
             {
-                //lstSonuc.Items.AddRange(item);
+                lstSonuc.Items.Add(item);
+                toplam += item;
             }
-            //instance: nesneden kopya almak demektir. 
-            //this içinde bulunduğunuz sınıfı temsil eder. yani burada form2'yi temsil eder.
-            //this.Text = toplam
+
+            this.Text = toplam.ToString(); //this içinde bulunduğunuz sınıfı temsil eder. yani burada form2'yi temsil eder. this.Text = toplam -> formun başlığı demek.
         }
 
         private void btnSesliSessiz_Click(object sender, EventArgs e)
@@ -151,25 +167,31 @@ namespace k08_Diziler
             8 tane sesli harfi tanımladıktan sonra metnin her bir harfini tek tek inceleriz. eğer gelen harf sesliHarfler dizisinde yer alıyorsa sesli almıyorsa sessiz label'ına eklenir.*/
             //string: karakterler dizisidir.
 
-            char[] sesliHarfler = { 'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'i' };
-            var girilen = txtSesliSessiz.Text;
+            char[] sesliHarfler = { 'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'ü' };
+            string girilen = txtSesliSessiz.Text;
 
-            foreach (var harf in girilen)
+            if (string.IsNullOrEmpty(txtSesliSessiz.Text))
+            {
+                MessageBox.Show("Lütfen bir şeyler yazıp tekrar deneyiniz");
+            }
+
+            foreach (char harf in girilen)
             {
                 if (sesliHarfler.Contains(harf))
                 {
-                    lblSesli.Text += harf.ToString();
+                    lblSesliler.Text += harf.ToString().ToLower();
                 }
 
                 else
                 {
-                    lblSessiz.Text += harf.ToString();
+                    lblSessizler.Text += harf.ToString().ToLower();
                 }
             }
-
-            
         }
 
-       
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            lstSonuc.Items.Clear();
+        }
     }
 }

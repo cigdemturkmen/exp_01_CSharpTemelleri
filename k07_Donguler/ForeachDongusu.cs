@@ -12,7 +12,7 @@ namespace k07_Donguler
 {
     public partial class ForeachDongusu : Form
     {
-        /*liste veya dizi gibi bir koleksiyonda döner ve her dönüşte gelen değeri bir değişken üzerinde tutar.Koleksiyon içinde okunacak değer olduğu sürce dönmeye devam eder.*/
+        /*Foreach, liste veya dizi gibi bir koleksiyonda döner ve her dönüşte gelen değeri bir değişken üzerinde tutar. Koleksiyon içinde okunacak değer olduğu sürece dönmeye devam eder.*/
 
         public ForeachDongusu()
         {
@@ -25,20 +25,23 @@ namespace k07_Donguler
                 MessageBox.Show(isim);
             }
 
-            //bu foreach'in aynısını for'la yaz.
+            //Bu foreach'in aynısını for'la yaz:
 
             for (int i = 0; i < isimler.Length; i++)
             {
-                var isim = isimler[];
-                MessageBox.Show($"{i}. öğrenci {isim}");
+                MessageBox.Show(isimler[i]);
             }
+
+            //for (int i = 0; i < isimler.Length; i++)
+            //{
+            //    var isim = isimler[];
+            //    MessageBox.Show($"{i}. öğrenci {isim}");
+            //}
         }
 
         private void ForeachDongusu_Load(object sender, EventArgs e)
         {
 
         }
-
-        
     }
 }

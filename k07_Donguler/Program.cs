@@ -17,8 +17,10 @@ namespace k07_Donguler
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
-            //Application.Run(new btnRastgele());
-            Application.Run(new ForeachDongusu());
+            Application.Run(new btnRastgele());
+            //Application.Run(new ForeachDongusu());
+            //Application.Run(new HamzaninYasi());
+            
         }
     }
 }

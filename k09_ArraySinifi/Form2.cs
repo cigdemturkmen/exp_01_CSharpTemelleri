@@ -26,9 +26,9 @@ namespace k09_ArraySinifi
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            //RESIZE ORNEGI
+            //RESIZE ORNEGI!!!
 
-            /*textboxtan alınan adı soyadı biz dizide toplayalım sonrasında listboxa ekleyelim.*/
+            /*Textbox'tan alınan adı ve soyadı bir dizide toplayalım, sonrasında listbox'a ekleyelim.*/
             var adSoyad = txtAdSoyad.Text;
             Array.Resize(ref ziyaretciler, ziyaretciler.Length+1);
 

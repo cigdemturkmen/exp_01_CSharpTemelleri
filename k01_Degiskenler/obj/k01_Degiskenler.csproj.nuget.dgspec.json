@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cigdem.turkmen\\source\\repos\\exp_01_CSharpTemelleri\\k01_Degiskenler\\k01_Degiskenler.csproj": {}
+    "C:\\Users\\Hp\\source\\repos\\exp_01_CSharpTemelleri\\k01_Degiskenler\\k01_Degiskenler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cigdem.turkmen\\source\\repos\\exp_01_CSharpTemelleri\\k01_Degiskenler\\k01_Degiskenler.csproj": {
+    "C:\\Users\\Hp\\source\\repos\\exp_01_CSharpTemelleri\\k01_Degiskenler\\k01_Degiskenler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cigdem.turkmen\\source\\repos\\exp_01_CSharpTemelleri\\k01_Degiskenler\\k01_Degiskenler.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\exp_01_CSharpTemelleri\\k01_Degiskenler\\k01_Degiskenler.csproj",
         "projectName": "k01_Degiskenler",
-        "projectPath": "C:\\Users\\cigdem.turkmen\\source\\repos\\exp_01_CSharpTemelleri\\k01_Degiskenler\\k01_Degiskenler.csproj",
-        "packagesPath": "C:\\Users\\cigdem.turkmen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cigdem.turkmen\\source\\repos\\exp_01_CSharpTemelleri\\k01_Degiskenler\\obj\\",
+        "projectPath": "C:\\Users\\Hp\\source\\repos\\exp_01_CSharpTemelleri\\k01_Degiskenler\\k01_Degiskenler.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hp\\source\\repos\\exp_01_CSharpTemelleri\\k01_Degiskenler\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\cigdem.turkmen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -55,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
