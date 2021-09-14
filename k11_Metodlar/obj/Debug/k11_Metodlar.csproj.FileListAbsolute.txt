@@ -8,3 +8,5 @@ C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k11_Metodlar\obj\Deb
 C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k11_Metodlar\obj\Debug\k11_Metodlar.csproj.CoreCompileInputs.cache
 C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k11_Metodlar\obj\Debug\k11_Metodlar.exe
 C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k11_Metodlar\obj\Debug\k11_Metodlar.pdb
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k11_Metodlar\obj\Debug\k11_Metodlar.Form2.resources
+C:\Users\cigdem.turkmen\source\repos\exp_01_CSharpTemelleri\k11_Metodlar\obj\Debug\k11_Metodlar.Form3.resources

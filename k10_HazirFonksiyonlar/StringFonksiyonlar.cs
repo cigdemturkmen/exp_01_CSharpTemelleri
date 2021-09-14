@@ -103,7 +103,7 @@ namespace k10_HazirFonksiyonlar
 
         private void btnSplit_Click(object sender, EventArgs e)
         {
-            var ayrilanlar = ornekIfade.Split(' '); //"bilge", "adam"
+            var ayrilanlar = ornekIfade.Split(' '); //"bilge", "adam" //burada çıkan sonuç bir array oluyor!!
 
             var metin = "merhaba, benim adım, nur";
             var ayrilanlar1 = metin.Split(',', ' '); //params //hem ,'e hem ' 'a göre ayırır.

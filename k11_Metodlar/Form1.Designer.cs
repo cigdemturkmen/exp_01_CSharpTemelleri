@@ -37,6 +37,8 @@
             this.btnTopla = new System.Windows.Forms.Button();
             this.txtSayi1 = new System.Windows.Forms.TextBox();
             this.txtSayi2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtAd
@@ -83,9 +85,9 @@
             // 
             // btnIsimYazdir
             // 
-            this.btnIsimYazdir.Location = new System.Drawing.Point(340, 63);
+            this.btnIsimYazdir.Location = new System.Drawing.Point(94, 173);
             this.btnIsimYazdir.Name = "btnIsimYazdir";
-            this.btnIsimYazdir.Size = new System.Drawing.Size(75, 23);
+            this.btnIsimYazdir.Size = new System.Drawing.Size(100, 23);
             this.btnIsimYazdir.TabIndex = 6;
             this.btnIsimYazdir.Text = "İsmi Yazdır";
             this.btnIsimYazdir.UseVisualStyleBackColor = true;
@@ -93,9 +95,9 @@
             // 
             // btnTopla
             // 
-            this.btnTopla.Location = new System.Drawing.Point(370, 228);
+            this.btnTopla.Location = new System.Drawing.Point(94, 283);
             this.btnTopla.Name = "btnTopla";
-            this.btnTopla.Size = new System.Drawing.Size(75, 23);
+            this.btnTopla.Size = new System.Drawing.Size(100, 23);
             this.btnTopla.TabIndex = 7;
             this.btnTopla.Text = "Topla";
             this.btnTopla.UseVisualStyleBackColor = true;
@@ -103,26 +105,46 @@
             // 
             // txtSayi1
             // 
-            this.txtSayi1.Location = new System.Drawing.Point(340, 176);
+            this.txtSayi1.Location = new System.Drawing.Point(94, 231);
             this.txtSayi1.Name = "txtSayi1";
             this.txtSayi1.Size = new System.Drawing.Size(100, 20);
             this.txtSayi1.TabIndex = 8;
             // 
             // txtSayi2
             // 
-            this.txtSayi2.Location = new System.Drawing.Point(340, 202);
+            this.txtSayi2.Location = new System.Drawing.Point(94, 257);
             this.txtSayi2.Name = "txtSayi2";
             this.txtSayi2.Size = new System.Drawing.Size(100, 20);
             this.txtSayi2.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(40, 238);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Sayı 1:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(40, 264);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Sayı 2:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 509);
+            this.Controls.Add(this.btnTopla);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSayi2);
             this.Controls.Add(this.txtSayi1);
-            this.Controls.Add(this.btnTopla);
             this.Controls.Add(this.btnIsimYazdir);
             this.Controls.Add(this.lblAd);
             this.Controls.Add(this.btnGoster);
@@ -148,6 +170,8 @@
         private System.Windows.Forms.Button btnTopla;
         private System.Windows.Forms.TextBox txtSayi1;
         private System.Windows.Forms.TextBox txtSayi2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

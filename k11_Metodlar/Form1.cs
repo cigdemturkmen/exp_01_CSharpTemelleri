@@ -14,7 +14,7 @@ namespace k11_Metodlar
     {
         /*
          Metodlar
-        Kod tekrarını önler. Kodların daha düzenli tutulmasın sağlar.
+        Kod tekrarını önler. Kodların daha düzenli tutulmasın sağlar.m Metod her yerde tanımlanabiliyor(sınıf içinde!). Metodlar sadece çağırıldığı zaman çalışır.
         1.parametre almayan, geriye değer döndürmeyen metodlar
         2.parametre alan, geriye değer döndürmeyen metodlar
         3.parametre almayan, geriye değer döndüren metodlar
@@ -22,31 +22,28 @@ namespace k11_Metodlar
 
         [access modifier] gerideğerdönmedurumu MetodAdı (varsa parametreler)
         {
-        //metodun yapmasını ist. işlemler
+          //metodun yapmasını istediğin işlemler
         }
 
-        eğer metod geriye değer döndürmeyecekse void ile oluşturulur.
-        metod her yerde tanımlanabiliyor (sınıf içinde).
-        metodlar çağırıldığı zaman çalışır.
-
-        metod adı kuralları:
-        1. PascalCase
-        2. başta rakam olmaz
-        3.Emir kipleri ile tanımlanırlar
-
+        Eğer metod geriye değer döndürmeyecekse void ile oluşturulur. Değer döndüren bir metod ise void yerine fonksiyondan dönen verinin veri tipi yazılarak oluşturulur, örn: private int Multiply(int x, int y){}
+        
+        Metod isimlendirme kuralları:
+        1. PascalCase ile yazılır.
+        2. Başta rakam ve _ olmaz.
+        3.Emir kipleri ile tanımlanırlar. (Write.., Show.., Find.. etc.)
          */
 
         #region Metodlar
-        //1.parametre almayan, geriye değer döndürmeyen metodlar
+        //1.Parametre almayan, geriye değer döndürmeyen metodlar
         private void AdSoyadYazdir()
         {
-            MessageBox.Show("Rabia Nur Öztürk"); //button click eventin içinde de kullanabilirdin.
+            MessageBox.Show("Rabia Nur Öztürk");
         }
 
-        //2.parametre alan, geriye değer döndürmeyen metodlar
+        //2.Parametre alan, geriye değer döndürmeyen metodlar
         private void AdSoyadYazdir(string adSoyad)
         {
-            MessageBox.Show("Rabia Nur Öztürk");
+            MessageBox.Show(adSoyad); ;
         }
 
         private void AdSoyadYazdir(string ad, string soyad)
@@ -54,8 +51,8 @@ namespace k11_Metodlar
             MessageBox.Show($"{ad} {soyad}");
         }
 
-        //3.parametre almayan, geriye değer döndüren metodlar. 
-        //Metodun başında void değil de bir veri tipi yazıyorsa, o metod veri döndüren bir metoddur.
+        //3.Parametre almayan, geriye değer döndüren metodlar. 
+        //Metodun başında void değil de bir veri tipi yazıyorsa, o metot veri döndüren bir metoddur.
         private string AdSoyadGetir()
         {
             var isim = "Rabia Nur Öztürk";
@@ -69,9 +66,10 @@ namespace k11_Metodlar
             return toplam;
         }
 
-        //string 3 parametre alsın. sonuç olarak in döndürsün. aldığı stringleri int'e çevirecek topl ve sonuc dönecek
-        //matematiksek olarak alacağı string değerleri int'e çevirir sonrasında mat toplayarak sonuçta gösterir
+        /*String 3 parametre alsın. sonuç olarak int döndürsün. Aldığı stringleri int'e çevirecek, toplayacak ve sonuc dönecek.(matematiksek olarak alacağı string değerleri int'e çevirir sonrasında mat toplayarak sonuçta gösterir)
+        */
 
+        //METOD OLUŞTURDUKTAN SONRA /// YAZ VE ŞU SUMMARY KISMMINI DOLDUR. DAHA SONRADAN METODA BAKTIĞINDA HEMEN ANLARSIN NE İŞE YARADIĞINI;
         /// <summary>
         /// Fonksiyon ne yapar onun açıklaması
         /// </summary>
@@ -79,7 +77,7 @@ namespace k11_Metodlar
         /// <param name="y">parametre tipi</param>
         /// <param name="z">parametre tipi</param>
         /// <returns>ne döndürür</returns>
-        private int Topla(string x, string y, string z) //int burada döndüğü değerin veri tipidir
+        private int Topla(string x, string y, string z) //int burada metdun döndüğü değerin veri tipidir.
         {
             try
             {
@@ -93,15 +91,12 @@ namespace k11_Metodlar
             catch (Exception)
             {
                 MessageBox.Show("Sayisal veriler giriniz");
-                throw; //bunu yorum satırına alırsan fonksiyon hata verir. throw da bir return tipidir.
+                throw; //Bunu yorum satırına alırsan fonksiyon hata verir. Throw da bir return tipidir.
             }
-            
         }
-
-
         #endregion
 
-        public Form1()
+        public Form1() //constructure içinden de metodlarımı çağırabilirim. çünkü bu cnstr aynı class'ın içinde.
         {
             InitializeComponent();
             AdSoyadYazdir(); //button click eventin içinde de kullanabilirdin.
@@ -131,7 +126,6 @@ namespace k11_Metodlar
             int sayi2 = Convert.ToInt32(txtSayi2);
             var toplam = Topla(sayi1, sayi2);
             MessageBox.Show(toplam.ToString());
-
         }
     }
 }
