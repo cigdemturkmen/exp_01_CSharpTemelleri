@@ -19,7 +19,7 @@ namespace k11_Metodlar
          */
         #region Params
 
-        private int Topla (int sayi1, int sayi2)
+        private int Topla(int sayi1, int sayi2)
         {
             return sayi1 + sayi2;
         }
@@ -48,24 +48,51 @@ namespace k11_Metodlar
         }
         #endregion
         #region Out
+        /*Geriye değer döndürmeyen metodlardan bir değer taşımak için kullanılır veya geriye değer döndüren metodlardan döndürülen değer dışında ekstra bir bilgi taşımak istediğimiz durumlarda kullandığımız anahtar kelimedir.*/
 
-        #endregion
-
-        private void RandomSayiUret(int girilenSayi)
+        private void RandomSayiUret(int girilenSayi, out int donusSayisi) //DateTime TryParse böyle...
         {
             Random rnd = new Random();
-            var randomSayi = rnd.Next(1, 101);
-            
-            for (int i = 0; i < girilenSayi; i++)
+            int sayac = 0;
+
+            for (int i = 0; i < girilenSayi; i++) //while kullanırsan aynı sayılar gelse bile belirttiğin miktar kadar sayı yazdırabilirsin. for ile bunu yapamazsın. 
             {
+                var randomSayi = rnd.Next(1, 101);
                 if (!listBox1.Items.Contains(randomSayi))
                 {
-                    
                     listBox1.Items.Add(randomSayi);
                 }
-                
+                sayac++;
             }
+            donusSayisi = sayac;
         }
+
+        /// <summary>
+        /// 1-100 arasında kullanıcının ist. kadar sayı üretip dizi olarak geri döndürür
+        /// </summary>
+        /// <param name="uretilecekRastgeleSayi"></param>
+        /// <param name="donusSayisi"></param>
+        /// <returns></returns>
+        private int[] rastgeleSayilarUret(int uretilecekRastgeleSayi, out int donusSayisi)
+        {
+            var sayilar = new int[0];
+            Random rnd = new Random();
+            int sayac = 0;
+            while (sayilar.Length < uretilecekRastgeleSayi)
+            {
+                
+                var rastgeleSayi = rnd.Next(1, 100);
+                if (!sayilar.Contains(rastgeleSayi))
+                {
+                    Array.Resize(ref sayilar, sayilar.Length + 1); //int'de default değer 0'dır.
+                    sayilar[sayilar.Length - 1] = rastgeleSayi;
+                }
+                sayac++;
+            }
+            donusSayisi = sayac;
+            return sayilar; //return'den sonra yazılan hiçbir şey çalışmaz, unutma.
+        }
+        #endregion
 
         public Form3()
         {
@@ -83,8 +110,47 @@ namespace k11_Metodlar
             //kaç tane random sayı üretmek istediğimizi kullanıcıya soralım
             //listbox'a daha önce eklenen bir sayı bir daha eklenmesin
             //RandomSayiUret(10)
+            int donguKacKezDondu = 0; //out kullanımı için yaptık.
             var girdi = Convert.ToInt32(txti.Text);
-            RandomSayiUret(girdi);
+            RandomSayiUret(girdi, out donguKacKezDondu);
+            this.Text = donguKacKezDondu.ToString();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //TODO bunu sil sonra
+        }
+
+        private void btnRandomArray_Click(object sender, EventArgs e)
+        {
+            int girdi = Convert.ToInt32(txti.Text);
+            int kacKezDondu = 0;
+            var sayilar = rastgeleSayilarUret(girdi, out kacKezDondu);
+
+            foreach (var item in sayilar)
+            {
+                comboBox1.Items.Add(item);
+            }
+            
+            MessageBox.Show($"Ddl'deki elemanları üretmek için döngü {kacKezDondu} kez döndü.");
+        }
+
+        private void btnRef_Click(object sender, EventArgs e)
+        {
+            /* ref: metodlara parametre geçtiğiniz zaman, ana değişken üzerinden bir değişiklik olmaz çünkü metodlara gönderilen parametreler için kopya oluşturulur. ref deyince referansını değil de kendisini metodun içine yolladığını düşün. içeride nasıl değişirse, asıl değer de değişir.*/
+        }
+
+        private double UstAl(int sayi, int ust = 2) //ust değişkenine default olarak 2 değerini atadık.
+        {
+            return Math.Pow(sayi, ust);
+        }
+        private void btnDefaultDeger_Click(object sender, EventArgs e)
+        {
+            //metotların parametrelerini opsiyonel yapmak isteyebilirsiniz, bu durumda o parametre boş geçilirse default olarak bir değer vermeniz gerekir.
+            //value type'lar normalde default değeri ile ram'de oluşturulurlar. örn: int sayi; (int sayi, int? ust = 2)
+            //? yazıldığında o değere null geçilebileceğini anlatır.
+
+            //TODO bunun örneğini yaz
         }
     }
 }
